@@ -1685,7 +1685,7 @@ h2.typoh2{
     color: #212121;
 }
 .contact-grid-left input[type="text"]:nth-child(2){
-	margin:2em 0;
+	margin:0em 0;
 }
 .contact-grid textarea{
 	margin: 0 1em;

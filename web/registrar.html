@@ -83,27 +83,28 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="container">
 				<div class="contact-grid">
 					<div class="col-md-6 contact-grid-left">
-						<form action="#" method="post">
-							<input type="text" value="Nombre" name="Nombre" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
-							<input type="text" value="Apellido" name="lastname " onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Apellido';}" required="">
-							<input type="email" value="Email" name="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
-							
-						</form>
-					</div>
-					<div class="col-md-6 contact-grid-left">
-						<form action="#" method="post">
-							<input type="text" value="Usuario" name="user" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Phone';}" required="">
-							<input type="text" value="Contraseña" name="password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Subject';}" required="">
-							<input type="text" value="Repetir Contraseña" name="password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Subject';}" required="">
-						</form>
-					</div>
-					<div class="clearfix"> </div>
-					<form action="#" method="post">
-						<form>
-						<a href="encuestas.html"></a>
-						<input type="submit" value="Registrar">
+						
+						<form action="register.php" method="post" name="formulario">
+							<input type="text" placeholder="Nombre" name="name" required="">
+							<input type="text" placeholder="Apellido" name="lastname" required="">
+							<input type="email" placeholder="Email" name="email"  required="">
+
+
+					
+					
+						
+						
+							<input type="text" placeholder="Usuario" name="user"  required="">
+							<input type="password" placeholder="Contraseña" name="password"  required=""><br><br>	
+							<input type="password" placeholder="Repetir Contraseña" name="password_r" required="">
+					
+						
+							<input type="submit" value="Registrar">
 					</form>
+					</div>
 				</div>
+			</div>
+			</div>
 			</div>
 
 <!-- //mail -->
