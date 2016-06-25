@@ -1,9 +1,17 @@
-<!--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
+<?php
+session_start();
+if (!$_SESSION){
+    session_unset();
+    session_destroy();    
+    $session=null;
+    $name="Nombre de Usuario";
+}
+else{
+    $session=true;
+    $name =  $_SESSION['username'];    
+}
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,6 +26,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- //for-mobile-apps -->
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/main.css" rel="stylesheet"/>
 <!-- js -->
 <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 <!-- //js -->
@@ -59,9 +68,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
 						<nav>
 							<ul class="nav navbar-nav">
-								<li class="active"><a href="index.html">Home</a></li>
-								<li><a href="index.html" class="hvr-bounce-to-bottom">Encuestas</a></li>
+								<li ><a href="index.html">Home</a></li>
+								<li class="active"><a href="encuestas.html" class="hvr-bounce-to-bottom">Encuestas</a></li>
 								<li><a href="acerca.html" class="hvr-bounce-to-bottom">Acerca de..</a></li>
+								<?php
+								echo "<li><a href='acerca.html' class='hvr-bounce-to-bottom'>".$name."</a></li>";
+								?>
 							</ul>
 						</nav>
 				
@@ -72,36 +84,79 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 		</div>
 	</div>
-<!-- //header -->
-<
+<!-- //breadcrumbs -->
 <!-- mail -->
-	
 	<div class="contact">
-	<h3><span>Registrate</span></h3>
-			<p class="autem">"Haz tu cuenta para poder probar nuestro servicio"</p>
-			<div class="contact-grids">
 		<div class="container">
+			<h3><span>Módulo Uno: Empresas</span></h3>
+			<div class="contact-grids">
 				<div class="contact-grid">
 					<div class="col-md-6 contact-grid-left">
-						
-						<form action="register.php" method="post" name="formulario">
-							<input type="text" placeholder="Nombre" name="name" required="">
-							<input type="text" placeholder="Apellido" name="lastname" required="">
-							<input type="email" placeholder="Email" name="email"  required="">
-							<input type="text" placeholder="Usuario" name="user"  required="">
-							<input type="password" placeholder="Contraseña" name="password"  required="">	
-							<input type="password" placeholder="Repetir Contraseña" name="password_r" required="">
-					
-						
-							<input type="submit" value="Registrar">
-					</form>
+						<form action="#" method="post">
+							<p class="autem">1.	¿Cuál es el sector productivo al que pertenece?</p>
+							<div class="section_room">
+								<select id="country" onchange="change_country(this.value)" class="frm-field required">
+									<option value="null">Industria</option>
+									<option value="null">Comercio</option>
+									<option value="null">Servicio</option>
+								</select>
+							</div>
+							<p class="autem">2.	¿Cuál es el giro de la empresa?</p>
+							<div class="section_room">
+								<select id="country" onchange="change_country(this.value)" class="frm-field required">
+									<option value="null">Extractiva</option>
+									<option value="null">Manufacturera</option>
+									<option value="null">Agropecuaria</option>
+								</select>
+							</div>
+							<p class="autem">3.	¿Cuál es el tamaño de la empresa?</p>
+							<div class="section_room">
+								<select id="country" onchange="change_country(this.value)" class="frm-field required">
+									<option value="null">Pequeña</option>
+									<option value="null">Mediana</option>
+									<option value="null">Grande</option>
+								</select>
+							</div>
+							
+						</form>
 					</div>
+					<div class="clearfix"> </div>
+					<form action="#" method="post">
+						<input type="submit" value="Siguiente Modulo">
+					</form>
 				</div>
 			</div>
-			</div>
-			</div>
-
+		</div>
+	</div>
 <!-- //mail -->
-
+<!-- footer -->
+	<div class="footer">
+		<div class="container">
+			<div class="footer-copy">
+				<p>© 2016 All rights reserved | Design by </p>
+			</div>
+		</div>
+	</div>
+<!-- //footer -->
+<!-- for bootstrap working -->
+	<script src="js/bootstrap.js"></script>
+<!-- //for bootstrap working -->
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+<!-- //here ends scrolling icon -->
 </body>
 </html>

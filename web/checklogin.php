@@ -37,7 +37,7 @@ if ($result->num_rows > 0) {
                 </script>";
 
     echo "Bienvenido! " . $_SESSION['username'];
-    header ("Location: encuestas.html");
+    header ("Location: encuestas.php");
     
 
  } else { 

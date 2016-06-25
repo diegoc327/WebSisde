@@ -1,9 +1,17 @@
-<!--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
+<?php
+session_start();
+if (!$_SESSION){
+    session_unset();
+    session_destroy();    
+    $session=null;
+    $name="Diego";
+}
+else{
+    $session=true;
+    $name =  $_SESSION['username'];    
+}
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -61,8 +69,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<nav>
 							<ul class="nav navbar-nav">
 								<li ><a href="index.html">Home</a></li>
-								<li class="active"><a href="encuestas.html" class="hvr-bounce-to-bottom">Encuestas</a></li>
+								<li ><a href="encuestas.html" class="hvr-bounce-to-bottom">Encuestas</a></li>
+								<li class="active"><a href="encuestas.html" class="hvr-bounce-to-bottom">Administración</a></li>
 								<li><a href="acerca.html" class="hvr-bounce-to-bottom">Acerca de..</a></li>
+								<?php
+								echo "<li><a href='acerca.html' class='hvr-bounce-to-bottom'>".$name."</a></li>";
+								?>
 							</ul>
 						</nav>
 				
@@ -76,7 +88,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- //header -->
 <!-- gallery -->
 	<div class="gallery">
-	<h3 align="center"><span>Encuestas</span></h3>
+	<h3 align="center"><span>Catálogos</span></h3>
 			<p class="autem">Tu empresa es importante asi que cuida de ella</p>
 		<div class="container1">
 			
@@ -91,7 +103,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="carouselGallery-item">
 							<div class="carouselGallery-item-meta">
 								<span class="carouselGallery-item-meta-user">
-									<a href="empresas.html">Empresas</a>
+									<a href="empresas.html">Giros</a>
 								</span>
 							</div>
 						</div>
@@ -107,7 +119,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="carouselGallery-item">
 							<div class="carouselGallery-item-meta">
 								<span class="carouselGallery-item-meta-user">
-									Direccion Corporativa
+									Jurídica
 								</span>
 							</div>
 						</div>
@@ -123,7 +135,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="carouselGallery-item">
 							<div class="carouselGallery-item-meta">
 								<span class="carouselGallery-item-meta-user">
-									Recursos Humanos
+									Grado de participación
 								</span>
 							</div>
 						</div>
@@ -139,7 +151,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="carouselGallery-item">
 							<div class="carouselGallery-item-meta">
 								<span class="carouselGallery-item-meta-user">
-									Mercadologia
+									Ámbito estatal
 								</span>
 							</div>
 						</div>
@@ -155,7 +167,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="carouselGallery-item">
 							<div class="carouselGallery-item-meta">
 								<span class="carouselGallery-item-meta-user">
-									Financiero
+									Impuestos
 								</span>
 							</div>
 						</div>
@@ -171,7 +183,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="carouselGallery-item">
 							<div class="carouselGallery-item-meta">
 								<span class="carouselGallery-item-meta-user">
-									Economica
+									Contabilidad
 								</span>
 							</div>
 						</div>
@@ -187,7 +199,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="carouselGallery-item">
 							<div class="carouselGallery-item-meta">
 								<span class="carouselGallery-item-meta-user">
-									Contable
+									Tendencias Financieras
 								</span>
 							</div>
 						</div>
@@ -203,7 +215,24 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="carouselGallery-item">
 							<div class="carouselGallery-item-meta">
 								<span class="carouselGallery-item-meta-user">
-									Tributacion o Impuestos
+									Tipo de Comercialización
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4 gallery-grid">
+					<div class="carouselGallery-col-1 carouselGallery-carousel" data-likes="3144" data-index="7" data-username=" " data-imagetext="At vero eos et accusamus et iusto odio 
+						 dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores 
+						 et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui
+						 officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio." 
+						data-location="Temporibus" data-imagepath="images/7.jpg" data-posturl="#" 
+						style="background-image:url(images/tri.png);">
+						<div class="carouselGallery-item">
+							<div class="carouselGallery-item-meta">
+								<span class="carouselGallery-item-meta-user">
+									Departamentos
 								</span>
 							</div>
 						</div>

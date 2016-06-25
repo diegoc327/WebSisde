@@ -1,3 +1,15 @@
+<?php
+session_start();
+if (!$_SESSION){
+    session_unset();
+    session_destroy();    
+    $session=null;
+}
+else{
+    $session=true;
+    $name =  $_SESSION['username'];    
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
