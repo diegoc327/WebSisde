@@ -10,6 +10,8 @@ else{
     $session=true;
     $name =  $_SESSION['username'];    
 }
+$_SESSION['datos_4']=$_POST;
+
 ?>
 
 <!DOCTYPE html>
@@ -92,77 +94,73 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="contact-grids">
 				<div class="contact-grid">
 					<div class="col-md-6 contact-grid-left">
-						<form action="#" method="post">
+						<form action="encuestas_catalogo_economico.php" id="Myform" method="post">
 							<p class="autem">1.	¿Elabora estados financieros?</p><br><br>
 							<div class="section_room">
-								<select id="country" onchange="change_country(this.value)" class="frm-field required">
-									<option value="null">Si</option>
-									<option value="null">No</option>
+								<select id="country" name ="pre_1" onchange="change_country(this.value)" class="frm-field required">
+									<option value="10">Si</option>
+									<option value="0">No</option>
+								</select>
+							</div>
+							<p class="autem">2.	¿Ha invertido en algún bien inmueble de la empresa?</p> 
+							<div class="section_room">
+								<select id="country" name ="pre_2" onchange="change_country(this.value)" class="frm-field required">
+									<option value="10">Si</option>
+									<option value="0">No</option>
 								</select>
 							</div>
 							<p class="autem">3.	¿Que lapso de pago maneja con los proveedores?</p><br>
 							<div class="section_room">
-								<select id="country" onchange="change_country(this.value)" class="frm-field required">
-									<option value="null">15 días</option>
-									<option value="null">30 días</option>
-									<option value="null">45 días</option>
+								<select id="country" name ="pre_3" onchange="change_country(this.value)" class="frm-field required">
+									<option value="10">15 días</option>
+									<option value="6.6">30 días</option>
+									<option value="3.3">45 días</option>
+								</select>
+							</div>
+							<p class="autem">4.	¿Conoce los niveles de liquidez o rentabilidad de su empresa?</p>
+							<div class="section_room">
+								<select id="country" name ="pre_4" onchange="change_country(this.value)" class="frm-field required">
+									<option value="10">Si</option>
+									<option value="0">No</option>
 								</select>
 							</div>
 							<p class="autem">5.	¿Obtiene algún tipo de finaciamiento?</p>
 							<div class="section_room">
-								<select id="country" onchange="change_country(this.value)" class="frm-field required">
-									<option value="null">Si</option>
-									<option value="null">No</option>
+								<select id="country" name ="pre_5" onchange="change_country(this.value)" class="frm-field required">
+									<option value="10">Si</option>
+									<option value="0">No</option>
+								</select>
+							</div>
+							<p class="autem">6.	¿Cuenta con planeación financiera?</p>
+							<div class="section_room">
+								<select id="country" name ="pre_6" onchange="change_country(this.value)" class="frm-field required">
+									<option value="10">Si</option>
+									<option value="0">No</option>
 								</select>
 							</div>
 							<p class="autem">7.	¿Que presupuestos operativos y financieros se elaboran?</p>
 							<div class="section_room">
-								<select id="country" onchange="change_country(this.value)" class="frm-field required">
-									<option value="null">Ventas</option>
-									<option value="null">Costos Ventas</option>
-									<option value="null">Gastos de operaciones</option>
+								<select id="country" name ="pre_7" onchange="change_country(this.value)" class="frm-field required">
+									<option value="10">Ventas</option>
+									<option value="6.6">Costos Ventas</option>
+									<option value="3.3">Gastos de operaciones</option>
+								</select>
+							</div>							
+							<p class="autem">8.	¿Realiza proyección de ventas? </p><br>
+							<div class="section_room">
+								<select id="country" name ="pre_8" onchange="change_country(this.value)" class="frm-field required">
+									<option value="10">Si</option>
+									<option value="0">No</option>
 								</select>
 							</div>
 
 						</form>
 					</div>
-					<div class="col-md-6 contact-grid-left">
-						<form action="#" method="post">
-							<p class="autem">2.	¿Ha invertido en algún bien inmueble de la empresa?</p> 
-							<div class="section_room">
-								<select id="country" onchange="change_country(this.value)" class="frm-field required">
-									<option value="null">Si</option>
-									<option value="null">No</option>
-								</select>
-							</div>
-							<p class="autem">4.	¿Conoce los niveles de liquidez o rentabilidad de su empresa?</p>
-							<div class="section_room">
-								<select id="country" onchange="change_country(this.value)" class="frm-field required">
-									<option value="null">Si</option>
-									<option value="null">No</option>
-								</select>
-							</div>
-							<p class="autem">6.	¿Cuenta con planeación financiera?</p>
-							<div class="section_room">
-								<select id="country" onchange="change_country(this.value)" class="frm-field required">
-									<option value="null">Si</option>
-									<option value="null">No</option>
-								</select>
-							</div>
-							<p class="autem">8.	¿Realiza proyección de ventas? </p><br>
-							<div class="section_room">
-								<select id="country" onchange="change_country(this.value)" class="frm-field required">
-									<option value="null">Si</option>
-									<option value="null">No</option>
-								</select>
-							</div>
-							
-						</form>
-					</div>
+					
 					<div class="clearfix"> </div>
-					<form action="#" method="post">
-						<input type="submit" value="Siguiente Modulo">
-					</form>
+					
+					<input type="submit" value="Siguiente Modulo" form="Myform">
+					
 				</div>
 			</div>
 		</div>

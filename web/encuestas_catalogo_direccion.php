@@ -8,8 +8,12 @@ if (!$_SESSION){
 }
 else{
     $session=true;
-    $name =  $_SESSION['username'];    
+    $name =  $_SESSION['username'];
 }
+
+$_SESSION['datos_1']=$_POST;
+
+
 ?>
 
 <!DOCTYPE html>
@@ -68,11 +72,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
 						<nav>
 							<ul class="nav navbar-nav">
-								<li ><a href="index.html">Home</a></li>
+								<li ><a href="index.php">Home</a></li>
 								<li class="active"><a href="encuestas.html" class="hvr-bounce-to-bottom">Encuestas</a></li>
 								<li><a href="acerca.html" class="hvr-bounce-to-bottom">Acerca de..</a></li>
 								<?php
-								echo "<li><a href='acerca.html' class='hvr-bounce-to-bottom'>".$name."</a></li>";
+								echo "<li><a href='acerca.html' class='hvr-bounce-to-bottom'>".$name.$_SESSION['datos_1']['sector']."</a></li>";
 								?>
 							</ul>
 						</nav>
@@ -92,40 +96,40 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="contact-grids">
 				<div class="contact-grid">
 					<div class="col-md-6 contact-grid-left">
-						<form action="#" method="post">
+						<form action="encuestas_catalogo_rh.php" id="Myform" method="post">
 							<p class="autem">1.	¿La empresa cuenta con una misión?</p>
 							<div class="section_room">
-								<select id="country" onchange="change_country(this.value)" class="frm-field required">
-									<option value="null">Si</option>
-									<option value="null">No</option>
+								<select id="country" name ="pre_1" onchange="change_country(this.value)" class="frm-field required">
+									<option value="20">Si</option>
+									<option value="10">No</option>
 								</select>
 							</div>
 							<p class="autem">2.	¿La empresa cuenta con una visión?</p>
 							<div class="section_room">
-								<select id="country" onchange="change_country(this.value)" class="frm-field required">
-									<option value="null">Si</option>
-									<option value="null">No</option>
+								<select id="country" name ="pre_2" onchange="change_country(this.value)" class="frm-field required">
+									<option value="20">Si</option>
+									<option value="10">No</option>
 								</select>
 							</div>
 							<p class="autem">3.	¿La empresa cuenta con objetivos?</p>
 							<div class="section_room">
-								<select id="country" onchange="change_country(this.value)" class="frm-field required">
-									<option value="null">Si</option>
-									<option value="null">No</option>
+								<select id="country" name ="pre_3" onchange="change_country(this.value)" class="frm-field required">
+									<option value="20">Si</option>
+									<option value="10">No</option>
 								</select>
 							</div>
 							<p class="autem">4.	¿Cuánto tiempo tiene la empresa en operación?</p>
 							<div class="section_room">
-								<select id="country" onchange="change_country(this.value)" class="frm-field required">
-									<option value="null">Menos de un año</option>
-									<option value="null">Mas de un año</option>
+								<select id="country" name ="pre_4" onchange="change_country(this.value)" class="frm-field required">
+									<option value="0">Menos de un año</option>
+									<option value="1">Mas de un año</option>
 								</select>
 							</div>
 							<p class="autem">5.	¿Cuenta con licencia del ayuntamiento?</p>
 							<div class="section_room">
-								<select id="country" onchange="change_country(this.value)" class="frm-field required">
-									<option value="null">Si</option>
-									<option value="null">No</option>
+								<select id="country" name ="pre_5" onchange="change_country(this.value)" class="frm-field required">
+									<option value="20">Si</option>
+									<option value="10">No</option>
 								</select>
 							</div>
 
@@ -134,9 +138,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					
 					
 					<div class="clearfix"> </div>
-					<form action="#" method="post">
-						<input type="submit" value="Siguiente Modulo">
-					</form>
+					
+					<input type="submit" value="Siguiente Modulo" form="Myform">
+					
 				</div>
 			</div>
 		</div>

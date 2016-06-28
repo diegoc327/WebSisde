@@ -1,9 +1,9 @@
 <?php
 
  $host_db = "localhost";
- $user_db = "root";
- $pass_db = "usbw";
- $db_name = "sisde";
+ $user_db = "bestcons_root";
+ $pass_db = "25346318";
+ $db_name = "bestcons_sisde";
  $tbl_name = "tbl_usuarios";
  
  $form_pass = $_POST["password"];
@@ -37,8 +37,8 @@
  if ($conexion->query($query) === TRUE) {
  
  echo "<br />" . "<h2>" . "Usuario Creado Exitosamente!" . "</h2>";
- echo "<h4>" . "Bienvenido: " . $_POST['username'] . "</h4>" . "\n\n";
- echo "<h5>" . "Hacer Login: " . "<a href='index.html'>Login</a>" . "</h5>"; 
+ echo "<h4>" . "Bienvenido: " . $_POST['user'] . "</h4>" . "\n\n";
+ echo "<h5>" . "Hacer Login: " . "<a href='../web/index.php'>Login</a>" . "</h5>"; 
  }
 
  else {

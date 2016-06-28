@@ -10,6 +10,42 @@ else{
     $session=true;
     $name =  $_SESSION['username'];    
 }
+$_SESSION['datos_8']=$_POST;
+
+$_puntaje_direccion=0;
+$_puntaje_humano=0;
+$_puntaje_mercado=0;
+$_puntaje_finanzas=0;
+$_puntaje_economico=0;
+$_puntaje_contable=0;
+$_puntaje_impuestos=0;
+
+foreach ($_SESSION['datos_2'] as $value) {
+  $_puntaje_direccion=$_puntaje_direccion+$value;
+}
+
+foreach ($_SESSION['datos_3'] as $value) {
+  $_puntaje_humano=$_puntaje_humano+$value;
+}
+
+foreach ($_SESSION['datos_4'] as $value) {
+  $_puntaje_mercado=$_puntaje_mercado+$value;
+}
+
+foreach ($_SESSION['datos_5'] as $value) {
+  $_puntaje_finanzas=$_puntaje_finanzas+$value;
+}
+
+foreach ($_SESSION['datos_6'] as $value) {
+  $_puntaje_economico=$_puntaje_economico+$value;
+}
+
+foreach ($_SESSION['datos_7'] as $value) {
+  $_puntaje_contable=$_puntaje_contable+$value;
+}
+foreach ($_SESSION['datos_8'] as $value) {
+  $_puntaje_impuestos=$_puntaje_impuestos+$value;
+}
 ?>
 
 <!DOCTYPE html>
@@ -68,11 +104,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
           <div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
             <nav>
               <ul class="nav navbar-nav">
-                <li ><a href="index.html">Home</a></li>
+                <li ><a href="../web/index.php">Home</a></li>
                 <li class="active"><a href="encuestas.html" class="hvr-bounce-to-bottom">Encuestas</a></li>
                 <li><a href="acerca.html" class="hvr-bounce-to-bottom">Acerca de..</a></li>
                 <?php
-                echo "<li><a href='acerca.html' class='hvr-bounce-to-bottom'>".$name."</a></li>";
+                echo "<li><a href='acerca.html' class='hvr-bounce-to-bottom'>".$name.$_puntaje_direccion."</a></li>";
                 ?>
               </ul>
             </nav>
@@ -87,19 +123,43 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 <script type="text/javascript" src="https://www.google.com/jsapi"></script> 
 <script>
+   var puntaje_direccion_s = '<?php echo $_puntaje_direccion; ?>';
+   var puntaje_direccion_n = parseInt(puntaje_direccion_s);
+
+   var puntaje_humano_s = '<?php echo $_puntaje_humano; ?>';
+   var puntaje_humano_n = parseInt(puntaje_humano_s);
+
+   var puntaje_mercado_s = '<?php echo $_puntaje_mercado; ?>';
+   var puntaje_mercado_n = parseInt(puntaje_mercado_s);
+
+   var puntaje_finanzas_s = '<?php echo $_puntaje_finanzas; ?>';
+   var puntaje_finanzas_n = parseInt(puntaje_finanzas_s);
+
+   var puntaje_economico_s = '<?php echo $_puntaje_economico; ?>';
+   var puntaje_economico_n = parseInt(puntaje_economico_s);
+
+   var puntaje_contable_s = '<?php echo $_puntaje_contable; ?>';
+   var puntaje_contable_n = parseInt(puntaje_contable_s);
+
+   var puntaje_impuestos_s = '<?php echo $_puntaje_impuestos; ?>';
+   var puntaje_impuestos_n = parseInt(puntaje_impuestos_s);
+
    google.load("visualization", "1", {packages:["corechart"]});
    google.setOnLoadCallback(dibujarGrafico);
    function dibujarGrafico() {
      // Tabla de datos: valores y etiquetas de la gráfica
      var data = google.visualization.arrayToDataTable([
-       ['Texto', 'Valor numérico'],
-       ['Texto1', 20.21],
-       ['Texto2', 4.28],
-       ['Texto3', 17.26],
-       ['Texto4', 10.25]    
+       ['Texto', 'Puntaje'],
+       ['Modulo Direccion Corporativa', puntaje_direccion_n],
+       ['Modulo de Capital Humano', puntaje_humano_n],
+       ['Modulo de Mercadotecnia', puntaje_mercado_n],
+       ['Modulo de Finanzas', puntaje_finanzas_n],
+       ['Modulo Económico', puntaje_economico_n],
+       ['Modulo Contable', puntaje_contable_n],
+       ['Modulo de Impuestos', puntaje_impuestos_n]    
      ]);
      var options = {
-       title: 'Nuestro primer ejemplo con Google Charts'
+       title: 'Resultados'
      }
      // Dibujar el gráfico
      new google.visualization.ColumnChart( 
@@ -109,7 +169,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
    }
  </script> 
 <body>
-Comenzando con Google Charts....
+
 <div id="GraficoGoogleChart-ejemplo-1" style="width: 800px; height: 600px">
 </div>
 </body>

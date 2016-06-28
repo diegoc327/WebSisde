@@ -8,8 +8,11 @@ if (!$_SESSION){
 }
 else{
     $session=true;
-    $name =  $_SESSION['username'];    
+    $name =  $_SESSION['username'];
+
 }
+$_SESSION['datos_7']=$_POST;
+
 ?>
 
 <!DOCTYPE html>
@@ -92,68 +95,64 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="contact-grids">
 				<div class="contact-grid">
 					<div class="col-md-6 contact-grid-left">
-						<form action="#" method="post">
+						<form action="ejemplo_grafica.php" id="Myform" method="post">
 							<p class="autem">1.	¿Se encuentra inscrito en el Registro Federal de Contribuyentes?</p>
 							<div class="section_room">
-								<select id="country" onchange="change_country(this.value)" class="frm-field required">
-									<option value="null">Si</option>
-									<option value="null">No</option>
+								<select id="country" name ="pre_1" onchange="change_country(this.value)" class="frm-field required">
+									<option value="14.28">Si</option>
+									<option value="0">No</option>
+								</select>
+							</div>
+							<p class="autem">2.	¿Emite facturas electrónicas? </p><br><br> 
+							<div class="section_room">
+								<select id="country" name ="pre_2" onchange="change_country(this.value)" class="frm-field required">
+									<option value="14.28">Si</option>
+									<option value="0">No</option>
 								</select>
 							</div>
 							<p class="autem">3.	¿Realiza su contabilidad en sistemas electrónicos?</p>
 							<div class="section_room">
-								<select id="country" onchange="change_country(this.value)" class="frm-field required">
-									<option value="null">Si</option>
-									<option value="null">No</option>
+								<select id="country" name ="pre_3" onchange="change_country(this.value)" class="frm-field required">
+									<option value="14.28">Si</option>
+									<option value="0">No</option>
+								</select>
+							</div>
+							<p class="autem">4.	¿presenta pagos provisionales o definitivos mensuales de los siguientes impuestos? </p>
+							<div class="section_room">
+								<select id="country" name ="pre_4" onchange="change_country(this.value)" class="frm-field required">
+									<option value="null">ISR</option>
+									<option value="null">IVA</option>
 								</select>
 							</div>
 							<p class="autem">5.	¿Conoce la fecha límite de pago para dichos impuestos?</p>
 							<div class="section_room">
-								<select id="country" onchange="change_country(this.value)" class="frm-field required">
-									<option value="null">Si</option>
-									<option value="null">No</option>
+								<select id="country" name ="pre_5" onchange="change_country(this.value)" class="frm-field required">
+									<option value="14.28">Si</option>
+									<option value="0">No</option>
+								</select>
+							</div>
+							<p class="autem">6. ¿Presenta declaración anual?  </p><br>
+							<div class="section_room">
+								<select id="country" name ="pre_6" onchange="change_country(this.value)" class="frm-field required">
+									<option value="14.28">Si</option>
+									<option value="0">No</option>
 								</select>
 							</div>
 							<p class="autem">7.	¿Realiza el pago del 2% sobre nómina?</p>
 							<div class="section_room">
-								<select id="country" onchange="change_country(this.value)" class="frm-field required">
-									<option value="null">Si</option>
-									<option value="null">No</option>
+								<select id="country" name ="pre_7" onchange="change_country(this.value)" class="frm-field required">
+									<option value="14.28">Si</option>
+									<option value="0">No</option>
 								</select>
 							</div>
 							
 						</form>
 					</div>
-					<div class="col-md-6 contact-grid-left">
-						<form action="#" method="post">
-							<p class="autem">2.	¿Emite facturas electrónicas? </p><br><br> 
-							<div class="section_room">
-								<select id="country" onchange="change_country(this.value)" class="frm-field required">
-									<option value="null">Si</option>
-									<option value="null">No</option>
-								</select>
-							</div>
-							<p class="autem">4.	¿presenta pagos provisionales o definitivos mensuales de los siguientes impuestos? </p>
-							<div class="section_room">
-								<select id="country" onchange="change_country(this.value)" class="frm-field required">
-									<option value="null">ISR</option>
-									<option value="null">IVA</option>
-								</select>
-							</div>
-							<p class="autem">6. ¿Presenta declaración anual?  </p><br>
-							<div class="section_room">
-								<select id="country" onchange="change_country(this.value)" class="frm-field required">
-									<option value="null">Si</option>
-									<option value="null">No</option>
-								</select>
-							</div>
-								
-						</form>
-					</div>
+					
 					<div class="clearfix"> </div>
-					<form action="#" method="post">
-						<input type="submit" value="Siguiente Modulo">
-					</form>
+					
+					<input type="submit" value="Siguiente Modulo" form="Myform">
+					
 				</div>
 			</div>
 		</div>

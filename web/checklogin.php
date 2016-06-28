@@ -1,8 +1,5 @@
 <?php
 session_start();
-?>
-
-<?php
 
 $host_db = "localhost";
  $user_db = "root";
@@ -31,19 +28,14 @@ if ($result->num_rows > 0) {
     $_SESSION['username'] = $username;
     $_SESSION['start'] = time();
     //$_SESSION['expire'] = $_SESSION['start'] + (5 * 60);
-    echo " 
-                <script language='JavaScript'> 
-                alert('JavaScript dentro de PHP'); 
-                </script>";
-
-    echo "Bienvenido! " . $_SESSION['username'];
-    header ("Location: encuestas.php");
+    
+    header("Location: encuestas.php");
     
 
  } else { 
    echo "Username o Password estan incorrectos.";
 
-   echo "<br><a href='index.html'>Volver a Intentarlo</a>";
+   echo "<br><a href='../web/index.php'>Volver a Intentarlo</a>";
  }
  mysqli_close($conexion); 
  ?>

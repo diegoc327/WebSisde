@@ -92,38 +92,39 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="contact-grids">
 				<div class="contact-grid">
 					<div class="col-md-6 contact-grid-left">
-						<form action="#" method="post">
+						<form action="encuestas_catalogo_direccion.php" method="post" id="Myform">
 							<p class="autem">1.	¿Cuál es el sector productivo al que pertenece?</p>
 							<div class="section_room">
-								<select id="country" onchange="change_country(this.value)" class="frm-field required">
-									<option value="null">Industria</option>
-									<option value="null">Comercio</option>
-									<option value="null">Servicio</option>
+								<select id="country" name="sector" onchange="change_country(this.value)" class="frm-field required">
+									<option value="Industria">Industria</option>
+									<option value="Comercio">Comercio</option>
+									<option value="Servicio">Servicio</option>
 								</select>
 							</div>
 							<p class="autem">2.	¿Cuál es el giro de la empresa?</p>
 							<div class="section_room">
-								<select id="country" onchange="change_country(this.value)" class="frm-field required">
-									<option value="null">Extractiva</option>
-									<option value="null">Manufacturera</option>
-									<option value="null">Agropecuaria</option>
+								<select id="country" name="giro" onchange="change_country(this.value)" class="frm-field required">
+									<option value="Extractiva">Extractiva</option>
+									<option value="Manufacturera">Manufacturera</option>
+									<option value="Agropecuaria">Agropecuaria</option>
 								</select>
 							</div>
 							<p class="autem">3.	¿Cuál es el tamaño de la empresa?</p>
 							<div class="section_room">
-								<select id="country" onchange="change_country(this.value)" class="frm-field required">
-									<option value="null">Pequeña</option>
-									<option value="null">Mediana</option>
-									<option value="null">Grande</option>
+								<select id="country" name="tamaño" onchange="change_country(this.value)" class="frm-field required">
+									<option value="Pequeña">Pequeña</option>
+									<option value="Mediana">Mediana</option>
+									<option value="Grande">Grande</option>
 								</select>
 							</div>
 							
 						</form>
 					</div>
 					<div class="clearfix"> </div>
-					<form action="#" method="post">
-						<input type="submit" value="Siguiente Modulo">
-					</form>
+
+					
+						<input type="submit" value="Siguiente Modulo" form="Myform">
+					
 				</div>
 			</div>
 		</div>

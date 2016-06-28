@@ -10,6 +10,7 @@ else{
     $session=true;
     $name =  $_SESSION['username'];    
 }
+$_SESSION['datos_5']=$_POST;
 ?>
 
 <!DOCTYPE html>
@@ -92,63 +93,56 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="contact-grids">
 				<div class="contact-grid">
 					<div class="col-md-6 contact-grid-left">
-						<form action="#" method="post">
+						<form action="encuestas_catalogo_contable.php" id="Myform" method="post">
 							<p class="autem">1.	¿Tiene conocimiento sobre la inflación de precios?</p>
 							<div class="section_room">
-								<select id="country" onchange="change_country(this.value)" class="frm-field required">
-									<option value="null">Si</option>
-									<option value="null">No</option>
+								<select id="country" name ="pre_1" onchange="change_country(this.value)" class="frm-field required">
+									<option value="16.67">Si</option>
+									<option value="0">No</option>
+								</select>
+							</div>
+							<p class="autem">2.	¿Toma en cuenta la determinación de precios el Índice de Precios al Consumidor (IPC)? </p> 
+							<div class="section_room">
+								<select id="country" name ="pre_2" onchange="change_country(this.value)" class="frm-field required">
+									<option value="16.67">Si</option>
+									<option value="0">No</option>
 								</select>
 							</div>
 							<p class="autem">3.	¿Considera que afecta la la paridad cambiaria del dolar a su empresa?</p>
 							<div class="section_room">
-								<select id="country" onchange="change_country(this.value)" class="frm-field required">
-									<option value="null">Si</option>
-									<option value="null">No</option>
-								</select>
-							</div>
-							<p class="autem">5.	¿Sabe cual es su porcentaje de ventas en el mercado?</p><br>
-							<div class="section_room">
-								<select id="country" onchange="change_country(this.value)" class="frm-field required">
-									<option value="null">Si</option>
-									<option value="null">No</option>
-								</select>
-							</div>
-							
-
-						</form>
-					</div>
-					<div class="col-md-6 contact-grid-left">
-						<form action="#" method="post">
-							<p class="autem">2.	¿Toma en cuenta la determinación de precios el Índice de Precios al Consumidor (IPC)? </p> 
-							<div class="section_room">
-								<select id="country" onchange="change_country(this.value)" class="frm-field required">
-									<option value="null">Si</option>
-									<option value="null">No</option>
+								<select id="country" name ="pre_3" onchange="change_country(this.value)" class="frm-field required">
+									<option value="16.67">Si</option>
+									<option value="0">No</option>
 								</select>
 							</div>
 							<p class="autem">4.	¿Considera que su producción o servicio satisface a sus clientes en el mercado? </p>
 							<div class="section_room">
-								<select id="country" onchange="change_country(this.value)" class="frm-field required">
-									<option value="null">Si</option>
-									<option value="null">No</option>
+								<select id="country" name ="pre_4" onchange="change_country(this.value)" class="frm-field required">
+									<option value="16.67">Si</option>
+									<option value="0">No</option>
+								</select>
+							</div>
+							<p class="autem">5.	¿Sabe cual es su porcentaje de ventas en el mercado?</p><br>
+							<div class="section_room">
+								<select id="country" name ="pre_5" onchange="change_country(this.value)" class="frm-field required">
+									<option value="16.67">Si</option>
+									<option value="0">No</option>
 								</select>
 							</div>
 							<p class="autem">6. ¿Realiza cotizaciones con sus costos de producción(materia prima, insumos, mano de obra, etc.)  ? </p>
 							<div class="section_room">
-								<select id="country" onchange="change_country(this.value)" class="frm-field required">
-									<option value="null">Si</option>
-									<option value="null">No</option>
+								<select id="country" name ="pre_6" onchange="change_country(this.value)" class="frm-field required">
+									<option value="16.67">Si</option>
+									<option value="0">No</option>
 								</select>
 							</div>
-								
+
 						</form>
 					</div>
+					
 					<div class="clearfix"> </div>
-					<form action="#" method="post">
-						<input type="submit" value="Siguiente Modulo">
-					</form>
-				</div>
+						<input type="submit" value="Siguiente Modulo" form="Myform">
+					</div>
 			</div>
 		</div>
 	</div>

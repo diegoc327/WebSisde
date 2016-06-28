@@ -10,6 +10,10 @@ else{
     $session=true;
     $name =  $_SESSION['username'];    
 }
+$_SESSION['datos_6']=$_POST;
+
+
+
 ?>
 
 <!DOCTYPE html>
@@ -92,82 +96,77 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="contact-grids">
 				<div class="contact-grid">
 					<div class="col-md-6 contact-grid-left">
-						<form action="#" method="post">
+						<form action="encuestas_catalogo_impuestos.php" id="Myform" method="post">
 							<p class="autem">1.	¿Registra los ingresos de ventas?</p>
 							<div class="section_room">
-								<select id="country" onchange="change_country(this.value)" class="frm-field required">
-									<option value="null">Si</option>
-									<option value="null">No</option>
+								<select id="country" name ="pre_1" onchange="change_country(this.value)" class="frm-field required">
+									<option value="11.11">Si</option>
+									<option value="0">No</option>
+								</select>
+							</div>
+							<p class="autem">2.	¿Que formas de pago recibe la empresa? </p> 
+							<div class="section_room">
+								<select id="country" name ="pre_2" onchange="change_country(this.value)" class="frm-field required">
+									<option value="null">Efectivo</option>
+									<option value="null">Débito o Crédito</option>
 								</select>
 							</div>
 							<p class="autem">3.	¿Cuenta con una persona encargada de la contabilidad de la empresa?</p>
 							<div class="section_room">
-								<select id="country" onchange="change_country(this.value)" class="frm-field required">
-									<option value="null">Si</option>
-									<option value="null">No</option>
+								<select id="country" name ="pre_3" onchange="change_country(this.value)" class="frm-field required">
+									<option value="11.11">Si</option>
+									<option value="0">No</option>
+								</select>
+							</div>
+							<p class="autem">4.	¿Realiza prorrateo de costos de materia prima? </p><br>
+							<div class="section_room">
+								<select id="country" name ="pre_4" onchange="change_country(this.value)" class="frm-field required">
+									<option value="11.11">Si</option>
+									<option value="0">No</option>
 								</select>
 							</div>
 							<p class="autem">5.	¿Conoce el punto de equilibrio real e ideal (con margen de utilidad)?</p>
 							<div class="section_room">
-								<select id="country" onchange="change_country(this.value)" class="frm-field required">
-									<option value="null">Si</option>
-									<option value="null">No</option>
+								<select id="country" name ="pre_5" onchange="change_country(this.value)" class="frm-field required">
+									<option value="11.11">Si</option>
+									<option value="0">No</option>
+								</select>
+							</div>
+							<p class="autem">6. ¿Conoce cuál es la depreciación de sus activos fijos (bienes, inmuebles, maquinaria, etc.)?  </p>
+							<div class="section_room">
+								<select id="country" name ="pre_6" onchange="change_country(this.value)" class="frm-field required">
+									<option value="11.11">Si</option>
+									<option value="0">No</option>
 								</select>
 							</div>
 							<p class="autem">7.	¿Conoce el costo marginal de fabricación del producto o servicio que ofrece?</p>
 							<div class="section_room">
-								<select id="country" onchange="change_country(this.value)" class="frm-field required">
-									<option value="null">Si</option>
-									<option value="null">No</option>
+								<select id="country" name ="pre_7" onchange="change_country(this.value)" class="frm-field required">
+									<option value="11.11">Si</option>
+									<option value="0">No</option>
+								</select>
+							</div>
+							<p class="autem">8. ¿Se ejerce control de los inventarios?  </p><br>
+							<div class="section_room">
+								<select id="country" name ="pre_8" onchange="change_country(this.value)" class="frm-field required">
+									<option value="11.11">Si</option>
+									<option value="0">No</option>
 								</select>
 							</div>
 							<p class="autem">9.	¿Considera que la empresa genera utilidades?</p><br>
 							<div class="section_room">
-								<select id="country" onchange="change_country(this.value)" class="frm-field required">
-									<option value="null">Si</option>
-									<option value="null">No</option>
+								<select id="country" name ="pre_9" onchange="change_country(this.value)" class="frm-field required">
+									<option value="11.11">Si</option>
+									<option value="0">No</option>
 								</select>
 							</div>
 
 						</form>
 					</div>
-					<div class="col-md-6 contact-grid-left">
-						<form action="#" method="post">
-							<p class="autem">2.	¿Que formas de pago recibe la empresa? </p> 
-							<div class="section_room">
-								<select id="country" onchange="change_country(this.value)" class="frm-field required">
-									<option value="null">Efectivo</option>
-									<option value="null">Débito o Crédito</option>
-								</select>
-							</div>
-							<p class="autem">4.	¿Realiza prorrateo de costos de materia prima? </p><br>
-							<div class="section_room">
-								<select id="country" onchange="change_country(this.value)" class="frm-field required">
-									<option value="null">Si</option>
-									<option value="null">No</option>
-								</select>
-							</div>
-							<p class="autem">6. ¿Conoce cuál es la depreciación de sus activos fijos (bienes, inmuebles, maquinaria, etc.)?  </p>
-							<div class="section_room">
-								<select id="country" onchange="change_country(this.value)" class="frm-field required">
-									<option value="null">Si</option>
-									<option value="null">No</option>
-								</select>
-							</div>
-							<p class="autem">8. ¿Se ejerce control de los inventarios?  </p><br>
-							<div class="section_room">
-								<select id="country" onchange="change_country(this.value)" class="frm-field required">
-									<option value="null">Si</option>
-									<option value="null">No</option>
-								</select>
-							</div>
-								
-						</form>
-					</div>
+					
 					<div class="clearfix"> </div>
-					<form action="#" method="post">
-						<input type="submit" value="Siguiente Modulo">
-					</form>
+						<input type="submit" value="Siguiente Modulo" form="Myform">
+					
 				</div>
 			</div>
 		</div>

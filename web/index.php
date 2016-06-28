@@ -67,7 +67,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<nav>
 							<ul class="nav navbar-nav">
 								<li class="active"><a href="index.html">Home</a></li>
-								<li><a href="encuestas.html" class="hvr-bounce-to-bottom">Encuestas</a></li>
+								<li><a href="encuestas.php" class="hvr-bounce-to-bottom">Encuestas</a></li>
 								<li><a href="acerca.html" class="hvr-bounce-to-bottom">Acerca de...</a></li>
 							</ul>
 						</nav>
@@ -87,6 +87,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<h3><span>Iniciar Sesion</span></h3>
 				<div class="reservation">
 					<div class="keywords">
+
+
 						<form action="checklogin.php" method="post">
 							<span class="glyphicon glyphicon-list-alty" aria-hidden="true"></span>
 							<input type="text" name="user" placeholder="Usuario" required=" ">
@@ -99,6 +101,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<p align="center"><a href="registrar.html">Registrate</a></p>
 							<input type="submit" value="Entrar">
 						</form>
+					
+
+
 					</div>
 				</div>
 			</div>

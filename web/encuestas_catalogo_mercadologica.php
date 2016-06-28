@@ -10,6 +10,9 @@ else{
     $session=true;
     $name =  $_SESSION['username'];    
 }
+$_SESSION['datos_3']=$_POST;
+
+
 ?>
 
 <!DOCTYPE html>
@@ -92,116 +95,124 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="contact-grids">
 				<div class="contact-grid">
 					<div class="col-md-6 contact-grid-left">
-						<form action="#" method="post">
+						<form action="encuestas_catalogo_financiero.php" id="Myform" method="post">
 							<p class="autem">1.	¿Conoce qué producto o servicio vende en mayor cantidad? (producto/servicio estrella)</p>
 							<div class="section_room">
-								<select id="country" onchange="change_country(this.value)" class="frm-field required">
-									<option value="null">Si</option>
-									<option value="null">No</option>
+								<select id="country" name ="pre_1" onchange="change_country(this.value)" class="frm-field required">
+									<option value="7.14">Si</option>
+									<option value="0">No</option>
+								</select>
+							</div>
+							<p class="autem">2.	¿Maneja algun tipo de publicidad?</p><br><br> 
+							<div class="section_room">
+								<select id="country" name ="pre_2" onchange="change_country(this.value)" class="frm-field required">
+									<option value="7.14">Si</option>
+									<option value="0">No</option>
 								</select>
 							</div>
 							<p class="autem">3.	¿Tiene identificados a sus clientes potenciales?</p>
 							<div class="section_room">
-								<select id="country" onchange="change_country(this.value)" class="frm-field required">
-									<option value="null">Si</option>
-									<option value="null">No</option>
-								</select>
-							</div>
-							<p class="autem">5.	¿Conoce a sus consumidores?</p>
-							<div class="section_room">
-								<select id="country" onchange="change_country(this.value)" class="frm-field required">
-									<option value="null">Si</option>
-									<option value="null">No</option>
-								</select>
-							</div>
-							<p class="autem">7.	¿Maneja el servicio de postventa?</p>
-							<div class="section_room">
-								<select id="country" onchange="change_country(this.value)" class="frm-field required">
-									<option value="null">Si</option>
-									<option value="null">No</option>
-								</select>
-							</div>
-							<p class="autem">9.	¿Se generan promociones?</p>
-							<div class="section_room">
-								<select id="country" onchange="change_country(this.value)" class="frm-field required">
-									<option value="null">Si</option>
-									<option value="null">No</option>
-								</select>
-							</div>
-							<p class="autem">11.	¿Cuenta con una página web?</p>
-							<div class="section_room">
-								<select id="country" onchange="change_country(this.value)" class="frm-field required">
-									<option value="null">Si</option>
-									<option value="null">No</option>
-								</select>
-							</div>
-							<p class="autem">13.	¿Cuenta con un logo?</p>
-							<div class="section_room">
-								<select id="country" onchange="change_country(this.value)" class="frm-field required">
-									<option value="null">Si</option>
-									<option value="null">No</option>
-								</select>
-							</div>
-						</form>
-					</div>
-					<div class="col-md-6 contact-grid-left">
-						<form action="#" method="post">
-							<p class="autem">2.	¿Maneja algun tipo de publicidad?</p><br><br> 
-							<div class="section_room">
-								<select id="country" onchange="change_country(this.value)" class="frm-field required">
-									<option value="null">Si</option>
-									<option value="null">No</option>
+								<select id="country" name ="pre_3" onchange="change_country(this.value)" class="frm-field required">
+									<option value="7.14">Si</option>
+									<option value="0">No</option>
 								</select>
 							</div>
 							<p class="autem">4.	¿DE que manera los identifica?</p>
 							<div class="section_room">
-								<select id="country" onchange="change_country(this.value)" class="frm-field required">
-									<option value="null">A) Demográficas</option>
-									<option value="null">B) Poder Adquisitivo</option>
-									<option value="null">C) Estilo de vida</option>
+								<select id="country" name ="pre_4" onchange="change_country(this.value)" class="frm-field required">
+									<option value="7.14">A) Demográficas</option>
+									<option value="7.14">B) Poder Adquisitivo</option>
+									<option value="7.14">C) Estilo de vida</option>
+								</select>
+							</div>
+							<p class="autem">5.	¿Conoce a sus consumidores?</p>
+							<div class="section_room">
+								<select id="country" name ="pre_5" onchange="change_country(this.value)" class="frm-field required">
+									<option value="7.14">Si</option>
+									<option value="0">No</option>
 								</select>
 							</div>
 							<p class="autem">6.	¿Maneja bases de datos de clientes?</p>
 							<div class="section_room">
-								<select id="country" onchange="change_country(this.value)" class="frm-field required">
-									<option value="null">Si</option>
-									<option value="null">No</option>
+								<select id="country" name ="pre_6" onchange="change_country(this.value)" class="frm-field required">
+									<option value="7.14">Si</option>
+									<option value="0">No</option>
+								</select>
+							</div>
+							<p class="autem">7.	¿Maneja el servicio de postventa?</p>
+							<div class="section_room">
+								<select id="country" name ="pre_7" onchange="change_country(this.value)" class="frm-field required">
+									<option value="7.14">Si</option>
+									<option value="0">No</option>
 								</select>
 							</div>
 							<p class="autem">8.	¿Realiza encuestas de satisfaccion al cliente? </p>
 							<div class="section_room">
-								<select id="country" onchange="change_country(this.value)" class="frm-field required">
-									<option value="null">Si</option>
-									<option value="null">No</option>
+								<select id="country" name ="pre_8" onchange="change_country(this.value)" class="frm-field required">
+									<option value="7.14">Si</option>
+									<option value="0">No</option>
+								</select>
+							</div>
+							<p class="autem">9.	¿Se generan promociones?</p>
+							<div class="section_room">
+								<select id="country" name ="pre_9" onchange="change_country(this.value)" class="frm-field required">
+									<option value="7.14">Si</option>
+									<option value="0">No</option>
 								</select>
 							</div>
 							<p class="autem">10.	¿Cuenta con redes sociales activas?</p>
 							<div class="section_room">
-								<select id="country" onchange="change_country(this.value)" class="frm-field required">
-									<option value="null">Si</option>
-									<option value="null">No</option>
+								<select id="country" name ="pre_10" onchange="change_country(this.value)" class="frm-field required">
+									<option value="7.14">Si</option>
+									<option value="0">No</option>
+								</select>
+							</div>
+							<p class="autem">11.	¿Cuenta con una página web?</p>
+							<div class="section_room">
+								<select id="country" name ="pre_11" onchange="change_country(this.value)" class="frm-field required">
+									<option value="7.14">Si</option>
+									<option value="0">No</option>
 								</select>
 							</div>
 							<p class="autem">12.	¿Maneja un canal de distribución?</p>
 							<div class="section_room">
-								<select id="country" onchange="change_country(this.value)" class="frm-field required">
-									<option value="null">Si</option>
-									<option value="null">No</option>
+								<select id="country" name ="pre_12" onchange="change_country(this.value)" class="frm-field required">
+									<option value="7.14">Si</option>
+									<option value="0">No</option>
 								</select>
 							</div>
+							<p class="autem">13.	¿Cuenta con un logo?</p>
+							<div class="section_room">
+								<select id="country" name ="pre_13" onchange="change_country(this.value)" class="frm-field required">
+									<option value="7.14">Si</option>
+									<option value="0">No</option>
+								</select>
+							</div>
+
+							
+							
+							
+							
+							
 							<p class="autem">14.	¿Cuenta con alguna marca? </p>
 							<div class="section_room">
-								<select id="country" onchange="change_country(this.value)" class="frm-field required">
-									<option value="null">Si</option>
-									<option value="null">No</option>
+								<select id="country" name ="pre_14" onchange="change_country(this.value)" class="frm-field required">
+									<option value="7.14">Si</option>
+									<option value="0">No</option>
 								</select>
 							</div>
+
+						</form>
+					</div>
+					<div class="col-md-6 contact-grid-left">
+						<form action="#" method="post">
+							
 						</form>
 					</div>
 					<div class="clearfix"> </div>
-					<form action="#" method="post">
-						<input type="submit" value="Siguiente Modulo">
-					</form>
+					
+					<input type="submit" value="Siguiente Modulo" form="Myform">
+					
 				</div>
 			</div>
 		</div>

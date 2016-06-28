@@ -10,6 +10,10 @@ else{
     $session=true;
     $name =  $_SESSION['username'];    
 }
+
+$_SESSION['datos_2']=$_POST;
+
+
 ?>
 
 <!DOCTYPE html>
@@ -68,7 +72,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
 						<nav>
 							<ul class="nav navbar-nav">
-								<li ><a href="index.html">Home</a></li>
+								<li ><a href="index.php">Home</a></li>
 								<li class="active"><a href="encuestas.html" class="hvr-bounce-to-bottom">Encuestas</a></li>
 								<li><a href="acerca.html" class="hvr-bounce-to-bottom">Acerca de..</a></li>
 								<?php
@@ -92,115 +96,112 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="contact-grids">
 				<div class="contact-grid">
 					<div class="col-md-6 contact-grid-left">
-						<form action="#" method="post">
+						<form action="encuestas_catalogo_mercadologica.php" id=Myform method="post">
 							<p class="autem">1.	¿Cuenta con el departamento de recursos humanos?</p>
 							<div class="section_room">
-								<select id="country" onchange="change_country(this.value)" class="frm-field required">
-									<option value="null">Si</option>
-									<option value="null">No</option>
+								<select id="country" name ="pre_1" onchange="change_country(this.value)" class="frm-field required">
+									<option value="8.33">Si</option>
+									<option value="0">No</option>
+								</select>
+							</div>
+							<p class="autem">2.	¿Cuenta con algún encargado de recursos humanos?</p> 
+							<div class="section_room">
+								<select id="country" name ="pre_2" onchange="change_country(this.value)" class="frm-field required">
+									<option value="8.33">Si</option>
+									<option value="0">No</option>
 								</select>
 							</div>
 							<p class="autem">3.	¿Se realiza el proceso de reclutamiento y selección de personal?</p>
 							<div class="section_room">
-								<select id="country" onchange="change_country(this.value)" class="frm-field required">
-									<option value="null">Si</option>
-									<option value="null">No</option>
-								</select>
-							</div>
-							<p class="autem">5.	¿Se tienen diseñados perfiles de puesto?</p><br>
-							<div class="section_room">
-								<select id="country" onchange="change_country(this.value)" class="frm-field required">
-									<option value="null">Si</option>
-									<option value="null">No</option>
-								</select>
-							</div>
-							<p class="autem">7.	¿Los colaboradores cuentan con seguro social (IMSS)?</p>
-							<div class="section_room">
-								<select id="country" onchange="change_country(this.value)" class="frm-field required">
-									<option value="null">Si</option>
-									<option value="null">No</option>
-								</select>
-							</div>
-							<p class="autem">9.	¿Se evalúa el desempeño de los colaboradores?</p><br>
-							<div class="section_room">
-								<select id="country" onchange="change_country(this.value)" class="frm-field required">
-									<option value="null">Si</option>
-									<option value="null">No</option>
-								</select>
-							</div>
-							<p class="autem">11.	¿Se motiva al colaborador a cumplir los objetivos de la empresa?</p>
-							<div class="section_room">
-								<select id="country" onchange="change_country(this.value)" class="frm-field required">
-									<option value="null">Si</option>
-									<option value="null">No</option>
-								</select>
-							</div>
-							<p class="autem">13.	¿Existe una comunicación efectiva entre colaboradores?</p>
-							<div class="section_room">
-								<select id="country" onchange="change_country(this.value)" class="frm-field required">
-									<option value="null">Si</option>
-									<option value="null">No</option>
-								</select>
-							</div>
-						</form>
-					</div>
-					<div class="col-md-6 contact-grid-left">
-						<form action="#" method="post">
-							<p class="autem">2.	¿Cuenta con algún encargado de recursos humanos?</p> 
-							<div class="section_room">
-								<select id="country" onchange="change_country(this.value)" class="frm-field required">
-									<option value="null">Si</option>
-									<option value="null">No</option>
+								<select id="country" name ="pre_3" onchange="change_country(this.value)" class="frm-field required">
+									<option value="8.33">Si</option>
+									<option value="0">No</option>
 								</select>
 							</div>
 							<p class="autem">4.	¿Reciben capacitación los colaboradores?</p><br>
 							<div class="section_room">
-								<select id="country" onchange="change_country(this.value)" class="frm-field required">
-									<option value="null">Si</option>
-									<option value="null">No</option>
+								<select id="country" name ="pre_4" onchange="change_country(this.value)" class="frm-field required">
+									<option value="8.33">Si</option>
+									<option value="0">No</option>
+								</select>
+							</div>
+							<p class="autem">5.	¿Se tienen diseñados perfiles de puesto?</p><br>
+							<div class="section_room">
+								<select id="country" name ="pre_5" onchange="change_country(this.value)" class="frm-field required">
+									<option value="8.33">Si</option>
+									<option value="0">No</option>
 								</select>
 							</div>
 							<p class="autem">6.	¿Se establece organigrama (jerarquización) de puestos?</p>
 							<div class="section_room">
-								<select id="country" onchange="change_country(this.value)" class="frm-field required">
-									<option value="null">Si</option>
-									<option value="null">No</option>
+								<select id="country" name ="pre_6" onchange="change_country(this.value)" class="frm-field required">
+									<option value="8.33">Si</option>
+									<option value="0">No</option>
+								</select>
+							</div>
+							<p class="autem">7.	¿Los colaboradores cuentan con seguro social (IMSS)?</p>
+							<div class="section_room">
+								<select id="country" name ="pre_7" onchange="change_country(this.value)" class="frm-field required">
+									<option value="8.33">Si</option>
+									<option value="0">No</option>
 								</select>
 							</div>
 							<p class="autem">8.	¿Cuenta con un programa de seguridad e higiene laboral?</p>
 							<div class="section_room">
-								<select id="country" onchange="change_country(this.value)" class="frm-field required">
-									<option value="null">Si</option>
-									<option value="null">No</option>
+								<select id="country" name ="pre_8" onchange="change_country(this.value)" class="frm-field required">
+									<option value="8.33">Si</option>
+									<option value="0">No</option>
+								</select>
+							</div>
+							<p class="autem">9.	¿Se evalúa el desempeño de los colaboradores?</p><br>
+							<div class="section_room">
+								<select id="country" name ="pre_9" onchange="change_country(this.value)" class="frm-field required">
+									<option value="8.33">Si</option>
+									<option value="0">No</option>
 								</select>
 							</div>
 							<p class="autem">10.	¿Se laboran jornadas extensas de trabajo adicionales a su jornada?</p>
 							<div class="section_room">
-								<select id="country" onchange="change_country(this.value)" class="frm-field required">
-									<option value="null">Si</option>
-									<option value="null">No</option>
+								<select id="country" name ="pre_10" onchange="change_country(this.value)" class="frm-field required">
+									<option value="8.33">Si</option>
+									<option value="0">No</option>
+								</select>
+							</div>
+							<p class="autem">11.	¿Se motiva al colaborador a cumplir los objetivos de la empresa?</p>
+							<div class="section_room">
+								<select id="country" name ="pre_11" onchange="change_country(this.value)" class="frm-field required">
+									<option value="8.33">Si</option>
+									<option value="0">No</option>
 								</select>
 							</div>
 							<p class="autem">12.	¿Existe una comunicación efectiva entre colaborador y el patrón?</p>
 							<div class="section_room">
-								<select id="country" onchange="change_country(this.value)" class="frm-field required">
-									<option value="null">Si</option>
-									<option value="null">No</option>
+								<select id="country" name ="pre_12"onchange="change_country(this.value)" class="frm-field required">
+									<option value="8.33">Si</option>
+									<option value="0">No</option>
 								</select>
 							</div>
+							<p class="autem">13.	¿Existe una comunicación efectiva entre colaboradores?</p>
+							<div class="section_room">
+								<select id="country" name ="pre_13" onchange="change_country(this.value)" class="frm-field required">
+									<option value="8.33">Si</option>
+									<option value="0">No</option>
+								</select>
+							</div>			
+							
 							<p class="autem">14.	¿Existe un clima laboral agradable dentro de la empresa? </p>
 							<div class="section_room">
-								<select id="country" onchange="change_country(this.value)" class="frm-field required">
-									<option value="null">Si</option>
-									<option value="null">No</option>
+								<select id="country" name ="pre_14" onchange="change_country(this.value)" class="frm-field required">
+									<option value="8.33">Si</option>
+									<option value="0">No</option>
 								</select>
 							</div>
 						</form>
 					</div>
+					
 					<div class="clearfix"> </div>
-					<form action="#" method="post">
-						<input type="submit" value="Siguiente Modulo">
-					</form>
+						<input type="submit" value="Siguiente Modulo" form="Myform">
+					
 				</div>
 			</div>
 		</div>
