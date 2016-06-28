@@ -4,6 +4,28 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
+
+/* tabla*/
+table { font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif; font-size: 18px; margin: 10px; width: 100%;
+text-align: center; border-collapse: collapse; }
+
+th { font-size: 13px; font-weight: normal; padding: 8px; background:rgba(2, 2, 2, 0.60); border-top: 4px solid white;
+border-bottom: 1px solid #fff; color: white; }
+
+td { padding: 8px; background-color:rgba(2, 2, 2, 0.05); border-bottom: 1px solid #fff; color:black; border-top: 1px solid transparent; }
+
+tr:hover td { background:rgba(2, 2, 2, 0.50);  color: #white; }
+
+.editar {color: #0026FF; cursor:pointer;}
+
+.eliminar {color: #0026FF; cursor:pointer;}
+
+#contenedorForm {margin-left: 45px; font-size:12px;}
+
+.boton {   color: white; padding: 5px; margin: 10px;
+background:rgba(2, 2, 2, 0.60);
+font-weight: bold; }
+/* fin tabla*/
 html, body{
     font-size: 100%;
 	font-family: 'Open Sans', sans-serif;
@@ -1687,6 +1709,19 @@ h2.typoh2{
 .contact-grid-left input[type="text"]:nth-child(2){
 	margin:0em 0;
 }
+.contact-grid-center input[type="text"],.contact-grid-center input[type="email"],.contact-grid textarea{
+  outline: none;
+
+    border: 1px solid #E4E4E4;
+    background: #f5f5f5;
+    padding: 10px;
+    width: 100%;
+    font-size: 14px;
+    color: #212121;
+    }
+.contact-grid-center input[type="text"]:nth-child(2){
+  margin:0em 0;
+}
 .contact-grid textarea{
 	margin: 0 1em;
     min-height: 200px;
@@ -2872,6 +2907,13 @@ ul.com,.single-left4{
 	.contact-grid-left input[type="text"]:nth-child(2) {
 		margin: 1em 0;
 	}
+
+  .contact-grid-center {
+    padding: 0;
+  }
+  .contact-grid-center input[type="text"]:nth-child(2) {
+    margin: 1em 0;
+  }
 	.contact-grid textarea {
 		width: 100% !important;
 		margin: 0;
@@ -2991,7 +3033,7 @@ ul.com,.single-left4{
 	.related-post-right h4 a {
 		font-size: .9em;
 	}
-	.alert, p,.keywords input[type="text"],.services-top-breadcrumbs-right ul li,.categories ul li,.related-post-right p,.write-reply input[type="text"], .write-reply input[type="email"], .write-reply textarea,.admin p,.comments-grid-right p,.single-left3 p,.single-left2 ul.com li a,.contact-grid1-left1 a,.contact-grid-left input[type="text"], .contact-grid-left input[type="email"], .contact-grid textarea,.contact-grid1-left1 ul li,.footer-copy p,.nav > li > a,.footer-grid ul li a,.events-grid1 ul li,.footer p.para,.footer-contact input[type="text"],.footer-grid p {
+	.alert, p,.keywords input[type="text"],.services-top-breadcrumbs-right ul li,.categories ul li,.related-post-right p,.write-reply input[type="text"], .write-reply input[type="email"], .write-reply textarea,.admin p,.comments-grid-right p,.single-left3 p,.single-left2 ul.com li a,.contact-grid1-left1 a,.contact-grid-left input[type="text"],.contact-grid-center input[type="text"],.contact-grid-center input[type="email"], .contact-grid-left input[type="email"], .contact-grid textarea,.contact-grid1-left1 ul li,.footer-copy p,.nav > li > a,.footer-grid ul li a,.events-grid1 ul li,.footer p.para,.footer-contact input[type="text"],.footer-grid p {
 		font-size: 13px;
 	}
 	.services-top-breadcrumbs-right ul li i {

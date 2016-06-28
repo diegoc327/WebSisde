@@ -103,7 +103,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="carouselGallery-item">
 							<div class="carouselGallery-item-meta">
 								<span class="carouselGallery-item-meta-user">
-									<a href="empresas.html">Giros</a>
+									<a href="buscar_giro.php">Giros</a>
 								</span>
 							</div>
 						</div>
@@ -119,7 +119,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="carouselGallery-item">
 							<div class="carouselGallery-item-meta">
 								<span class="carouselGallery-item-meta-user">
-									Jurídica
+									<a href="buscar_juridica.php">Jurídica</a>
 								</span>
 							</div>
 						</div>
@@ -135,7 +135,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="carouselGallery-item">
 							<div class="carouselGallery-item-meta">
 								<span class="carouselGallery-item-meta-user">
-									Grado de participación
+									<a href="buscar_grado.php">Grado de participación</a>
 								</span>
 							</div>
 						</div>
@@ -151,7 +151,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="carouselGallery-item">
 							<div class="carouselGallery-item-meta">
 								<span class="carouselGallery-item-meta-user">
-									Ámbito estatal
+									<a href="buscar_ambito.php">Ámbito estatal</a>
 								</span>
 							</div>
 						</div>
@@ -167,7 +167,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="carouselGallery-item">
 							<div class="carouselGallery-item-meta">
 								<span class="carouselGallery-item-meta-user">
-									Impuestos
+									<a href="buscar_impuestos.php">Impuestos</a>
 								</span>
 							</div>
 						</div>
@@ -183,7 +183,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="carouselGallery-item">
 							<div class="carouselGallery-item-meta">
 								<span class="carouselGallery-item-meta-user">
-									Contabilidad
+									<a href="buscar_contabilidad.php">Contabilidad</a>
 								</span>
 							</div>
 						</div>
@@ -199,7 +199,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="carouselGallery-item">
 							<div class="carouselGallery-item-meta">
 								<span class="carouselGallery-item-meta-user">
-									Tendencias Financieras
+									<a href="buscar_tendencias.php">Tendencias Financieras</a>
 								</span>
 							</div>
 						</div>
@@ -215,7 +215,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="carouselGallery-item">
 							<div class="carouselGallery-item-meta">
 								<span class="carouselGallery-item-meta-user">
-									Tipo de Comercialización
+									<a href="buscar_tdcomer.php">Tipo de Comercialización</a>
 								</span>
 							</div>
 						</div>
@@ -232,7 +232,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="carouselGallery-item">
 							<div class="carouselGallery-item-meta">
 								<span class="carouselGallery-item-meta-user">
-									Departamentos
+									<a href="buscar_departamentos.php">Departamentos</a>
 								</span>
 							</div>
 						</div>

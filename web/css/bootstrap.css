@@ -1582,6 +1582,13 @@ pre code {
   margin-right: auto;
   margin-left: auto;
 }
+
+.container2 {
+  padding-right: 15px;
+  padding-left: 380px;
+  margin-right: auto;
+  margin-left: auto;
+}
 .container {
   padding-right: 15px;
   padding-left: 15px;
@@ -1956,7 +1963,7 @@ pre code {
     width: 58.33333333%;
   }
   .col-md-6 {
-    width: 50%;
+    width: 100%;
   }
   .col-md-5 {
     width: 41.66666667%;
