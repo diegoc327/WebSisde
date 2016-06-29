@@ -135,7 +135,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="carouselGallery-item">
 							<div class="carouselGallery-item-meta">
 								<span class="carouselGallery-item-meta-user">
+<<<<<<< HEAD
 									<a href="encuestas_catalogo_rh.php">Recursos Humanos
+=======
+									<a href="encuestas_catalogo_rh.php">Recursos Humanos</a>
+>>>>>>> 9536daebae3af9656326d2f8e4070a8b9e9e8b54
 								</span>
 							</div>
 						</div>
@@ -151,7 +155,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="carouselGallery-item">
 							<div class="carouselGallery-item-meta">
 								<span class="carouselGallery-item-meta-user">
+<<<<<<< HEAD
 									<a href="encuestas_catalogo_mercadologica.php">Mercadologia
+=======
+									<a href="encuestas_catalogo_mercadologica.php">Mercadologia</a>
+>>>>>>> 9536daebae3af9656326d2f8e4070a8b9e9e8b54
 								</span>
 							</div>
 						</div>
@@ -167,7 +175,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="carouselGallery-item">
 							<div class="carouselGallery-item-meta">
 								<span class="carouselGallery-item-meta-user">
+<<<<<<< HEAD
 									<a href="encuestas_catalogo_financiero.php">Financiero
+=======
+									<a href="encuestas_catalogo_financiero.php">Financiero</a>
+>>>>>>> 9536daebae3af9656326d2f8e4070a8b9e9e8b54
 								</span>
 							</div>
 						</div>
@@ -183,7 +195,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="carouselGallery-item">
 							<div class="carouselGallery-item-meta">
 								<span class="carouselGallery-item-meta-user">
+<<<<<<< HEAD
 									<a href="encuestas_catalogo_economico.php">Economica
+=======
+									<a href="encuestas_catalogo_economico.php">Economica</a>
+>>>>>>> 9536daebae3af9656326d2f8e4070a8b9e9e8b54
 								</span>
 							</div>
 						</div>
@@ -199,7 +215,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="carouselGallery-item">
 							<div class="carouselGallery-item-meta">
 								<span class="carouselGallery-item-meta-user">
+<<<<<<< HEAD
 									<a href="encuestas_catalogo_contable.php">Contable
+=======
+									<a href="encuestas_catalogo_contable.php">Contable</a>
+>>>>>>> 9536daebae3af9656326d2f8e4070a8b9e9e8b54
 								</span>
 							</div>
 						</div>
@@ -215,7 +235,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="carouselGallery-item">
 							<div class="carouselGallery-item-meta">
 								<span class="carouselGallery-item-meta-user">
+<<<<<<< HEAD
 									<a href="encuestas_catalogo_impuestos.php">Tributacion o Impuestos
+=======
+									<a href="encuestas_catalogo_impuestos.php">Tributacion o Impuestos</a>
+>>>>>>> 9536daebae3af9656326d2f8e4070a8b9e9e8b54
 								</span>
 							</div>
 						</div>

@@ -108,7 +108,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <li class="active"><a href="encuestas.html" class="hvr-bounce-to-bottom">Encuestas</a></li>
                 <li><a href="acerca.html" class="hvr-bounce-to-bottom">Acerca de..</a></li>
                 <?php
-                echo "<li><a href='acerca.html' class='hvr-bounce-to-bottom'>".$name.$_puntaje_direccion."</a></li>";
+                echo "<li><a href='acerca.html' class='hvr-bounce-to-bottom'>".$name."</a></li>";
                 ?>
               </ul>
             </nav>
@@ -167,10 +167,200 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
        document.getElementById('GraficoGoogleChart-ejemplo-1')
      ).draw(data, options);
    }
- </script> 
+ </script>
+
+
+
 <body>
 
-<div id="GraficoGoogleChart-ejemplo-1" style="width: 800px; height: 600px">
+
+
+
+
+
+
+
+
+<div class="contact">
+  <div class="container">     
+      <h3><span>Resultados</span></h3>
+      <p class="autem">"Tabla y Gráfica"</p>
+      <div class="contact-grids" width="100%" >
+        <div class="contact-grid">
+          <div class="col-md-6 contact-grid-center">
+            <form action="#" method="post">              
+                <table  >
+                
+                <tr> 
+                <th>Modulo </th> 
+                <th>Puntaje obtenido</th> 
+                <th>Situación</th>
+                <th>Diagnóstico</th>
+                </tr>
+                <tr> 
+                <td align="left">Módulo de Dirección Corporativa</td>
+                <td bgcolor="#FF0000"><?php echo $_puntaje_direccion; ?></td> 
+                
+
+
+
+                
+                  <?php
+                  if ($_puntaje_direccion<=60) {
+                    echo "<td class='Riesgo'>Riesgo</td><td><span class='ver' onclick='transformarEnEditable(this)'>ver</span></td>";
+                   } elseif ($_puntaje_direccion>80) {
+                     echo "<td class='Verde'>Verde</td><td><span class='ver' onclick='transformarEnEditable(this)'>ver</span></td>";
+                   }else{
+                    echo "<td class ='Precaución'>Precaución</td><td><span class='ver' onclick='transformarEnEditable(this)'>ver</span></td>";
+                    
+                   }
+                   ?>
+
+                
+
+
+
+                
+
+                </tr>
+
+                <tr> 
+                <td align="left">Módulo de Capital Humano</td>
+                <td><?php echo $_puntaje_humano; ?></td> 
+                <?php
+                  if ($_puntaje_humano<=60) {
+                    echo "<td class='Riesgo'>Riesgo</td>";
+                   } elseif ($_puntaje_humano>80) {
+                     echo "<td class='Verde'>Verde</td>";
+                   }else{
+                    echo "<td class ='Precaución'>Precaución</td>";
+                    
+                   }
+                   ?>
+                <td><span class="ver" onclick="transformarEnEditable(this)">ver</span></td>
+
+                </tr>
+
+                <tr> 
+                <td align="left">Módulo Mercadotecnia</td>
+                <td><?php echo $_puntaje_mercado; ?></td> 
+                <?php
+                  if ($_puntaje_mercado<=60) {
+                    echo "<td class='Riesgo'>Riesgo</td>";
+                   } elseif ($_puntaje_mercado>80) {
+                     echo "<td class='Verde'>Verde</td>";
+                   }else{
+                    echo "<td class ='Precaución'>Precaución</td>";
+                    
+                   }
+                   ?>
+                   <td><span class="ver" onclick="transformarEnEditable(this)">ver</span></td>
+
+                </tr>
+
+                <tr> 
+                <td align="left">Módulo de Finanzas</td>
+                <td><?php echo $_puntaje_finanzas; ?></td> 
+                <?php
+                  if ($_puntaje_finanzas<=60) {
+                    echo "<td class='Riesgo'>Riesgo</td>";
+                   } elseif ($_puntaje_finanzas>80) {
+                     echo "<td class='Verde'>Verde</td>";
+                   }else{
+                    echo "<td class ='Precaución'>Precaución</td>";
+                    
+                   }
+                   ?>
+                <td><span class="ver" onclick="transformarEnEditable(this)">ver</span></td>
+
+                </tr>
+
+                <tr> 
+                <td align="left">Módulo Economico</td>
+                <td><?php echo $_puntaje_economico; ?></td> 
+                <?php
+                  if ($_puntaje_economico<=60) {
+                    echo "<td class='Riesgo'>Riesgo</td>";
+                   } elseif ($_puntaje_economico>80) {
+                     echo "<td class='Verde'>Verde</td>";
+                   }else{
+                    echo "<td class ='Precaución'>Precaución</td>";
+                    
+                   }
+                   ?>
+                <td><span class="ver" onclick="transformarEnEditable(this)">ver</span></td>
+
+                </tr>
+                <tr> 
+                <td align="left">Módulo Contable</td>
+                <td><?php echo $_puntaje_contable; ?></td> 
+                <?php
+                  if ($_puntaje_contable<=60) {
+                    echo "<td class='Riesgo'>Riesgo</td>";
+                   } elseif ($_puntaje_contable>80) {
+                     echo "<td class='Verde'>Verde</td>";
+                   }else{
+                    echo "<td class ='Precaución'>Precaución</td>";
+                    
+                   }
+                   ?>
+                <td><span class="ver" onclick="transformarEnEditable(this)">ver</span></td>
+
+                </tr>
+                <tr> 
+                <td align="left">Módulo Impuestos</td>
+                <td><?php echo $_puntaje_impuestos; ?></td> 
+                <?php
+                  if ($_puntaje_impuestos<=60) {
+                    echo "<td class='Riesgo'>Riesgo</td>";
+                   } elseif ($_puntaje_impuestos>80) {
+                     echo "<td class='Verde'>Verde</td>";
+                   }else{
+                    echo "<td class ='Precaución'>Precaución</td>";
+                    
+                   }
+                   ?>
+                <td><span class="ver" onclick="transformarEnEditable(this)">ver</span></td>
+
+                </tr>
+
+                </table>
+            
+              
+            </form>
+          </div>
+           <div class="col-md-6 contact-grid-center">
+            <form action="#" method="post">
+              
+            <div id="GraficoGoogleChart-ejemplo-1" style="width: 800px; height: 600px">
 </div>
+              
+            </form>
+          </div>
+      </div>
+
+
+<?php
+
+require_once("dompdf/dompdf_config.inc.php");
+
+$html = "AQUI MI CODIGO HTML";
+
+//Creamos la instancia
+$dompdf = new DOMPDF();
+
+//Cargamos nuestro código HTML
+$dompdf->load_html($html);
+
+//Hacemos la conversion de HTML a PDF
+$dompdf->render();
+
+//El nombre con el que deseamos guardar el archivo generado
+$dompdf->stream("nombre.pdf");
+?>
+
+
+
+
 </body>
 </html>
