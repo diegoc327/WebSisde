@@ -47,38 +47,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	
 <body>
 <!-- header -->
-<div class="header">	
-		
-		<div class="header-bottom">
-			<div class="container">
-				<nav class="navbar navbar-default">
-					<!-- Brand and toggle get grouped for better mobile display -->
-					<div class="navbar-header">
-					
-						<div class="logo">
-							<img src="../web/images/sisde.png" with=75 height=75>
-							<img src="../web/images/itsnew.png" with=100 height=50>
-							<img src="../web/images/tec.png" with=100 height=70>
-						</div>
-					</div>
+<?php
+	include 'header.php'
 
-					<!-- Collect the nav links, forms, and other content for toggling -->
-					<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
-						<nav>
-							<ul class="nav navbar-nav">
-								<li class="active"><a href="index.html">Home</a></li>
-								<li><a href="encuestas.php" class="hvr-bounce-to-bottom">Encuestas</a></li>
-								<li><a href="acerca.html" class="hvr-bounce-to-bottom">Acerca de...</a></li>
-							</ul>
-						</nav>
-				
-						
-					</div>
-					<!-- /.navbar-collapse -->
-				</nav>
-			</div>
-		</div>
-	</div>
+?>
 <!-- //header -->
 <!-- banner -->
 	<div class="banner">

@@ -1,9 +1,9 @@
 <?php
 
  $host_db = "localhost";
- $user_db = "bestcons_root";
- $pass_db = "25346318";
- $db_name = "bestcons_sisde";
+ $user_db = "root";
+ $pass_db = "usbw";
+ $db_name = "sisde";
  $tbl_name = "tbl_usuarios";
  
  $form_pass = $_POST["password"];

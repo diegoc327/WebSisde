@@ -1698,8 +1698,13 @@ h2.typoh2{
 .contact-grids{
 	margin:3em 0;
 }
+.contact-grid-oc{
+  width: 50%;
+  margin: 0 auto;
+}
+
 .contact-grid {
-    width: 75%;
+    width: 90%;
     margin: 0 auto;
 }
 .contact-grid-left input[type="text"],.contact-grid-left input[type="email"],.contact-grid textarea{
@@ -1733,6 +1738,7 @@ h2.typoh2{
     width: 96.5% !important;
 }
 .contact-grid input[type="submit"]{
+
 	outline: none;
     border: none;
     background: #0026FF;
@@ -1740,7 +1746,7 @@ h2.typoh2{
     width: 35%;
     font-size: 1em;
     color: #fff;
-    margin: 1em 0 0 16em;
+    margin: 1em 0 0 21em;
     text-align: center;
 }
 .contact-grid input[type="submit"]:hover{

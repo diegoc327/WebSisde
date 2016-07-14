@@ -4,7 +4,7 @@ if (!$_SESSION){
     session_unset();
     session_destroy();    
     $session=null;
-    $name="Nombre de Usuario";
+    $name="Diego";
 }
 else{
     $session=true;
@@ -58,9 +58,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="navbar-header">
 					
 						<div class="logo">
-							<img src="../web/images/sisde.png" with=75 height=75>
-							<img src="../web/images/itsnew.png" with=100 height=50>
-							<img src="../web/images/tec.png" with=100 height=70>
+							<img src="images/sisde.png" with=75 height=75>
+							<img src="images/itsnew.png" with=100 height=50>
+							<img src="images/tec.png" with=100 height=70>
 						</div>
 					</div>
 
@@ -68,7 +68,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
 						<nav>
 							<ul class="nav navbar-nav">
-								<li ><a href="index.html">Home</a></li>
+								<li ><a href="index.php">Home</a></li>
 								<li class="active"><a href="encuestas.html" class="hvr-bounce-to-bottom">Encuestas</a></li>
 								<li><a href="acerca.html" class="hvr-bounce-to-bottom">Acerca de..</a></li>
 								<?php
@@ -90,9 +90,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="container">
 			<h3><span>Módulo Uno: Empresas</span></h3>
 			<div class="contact-grids">
-				<div class="contact-grid">
-					<div class="col-md-6 contact-grid-left">
-						<form action="encuestas_catalogo_direccion.php" method="post" id="Myform">
+				<div class="contact-grid" >
+					<div class="col-md-7 contact-grid-center">
+						<form action="encuestas_catalogo_direccion.php" method="post" id="Myform" width = "50%">
 							<p class="autem">1.	¿Cuál es el sector productivo al que pertenece?</p>
 							<div class="section_room">
 								<select id="country" name="sector" onchange="change_country(this.value)" class="frm-field required">
@@ -120,11 +120,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							
 						</form>
 					</div>
-					<div class="clearfix"> </div>
+					<div class="clearfix">
 
 					
 						<input type="submit" value="Siguiente Modulo" form="Myform">
-					
+					 </div>
 				</div>
 			</div>
 		</div>
@@ -142,22 +142,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- for bootstrap working -->
 	<script src="js/bootstrap.js"></script>
 <!-- //for bootstrap working -->
-<!-- here stars scrolling icon -->
-	<script type="text/javascript">
-		$(document).ready(function() {
-			/*
-				var defaults = {
-				containerID: 'toTop', // fading element id
-				containerHoverID: 'toTopHover', // fading element hover id
-				scrollSpeed: 1200,
-				easingType: 'linear' 
-				};
-			*/
-								
-			$().UItoTop({ easingType: 'easeOutQuart' });
-								
-			});
-	</script>
-<!-- //here ends scrolling icon -->
+
 </body>
 </html>

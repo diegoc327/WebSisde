@@ -94,9 +94,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
           <div class="navbar-header">
           
             <div class="logo">
-              <img src="../web/images/sisde.png" with=75 height=75>
-              <img src="../web/images/itsnew.png" with=100 height=50>
-              <img src="../web/images/tec.png" with=100 height=70>
+              <img src="images/sisde.png" with=75 height=75>
+              <img src="images/itsnew.png" with=100 height=50>
+              <img src="images/tec.png" with=100 height=70>
             </div>
           </div>
 
@@ -104,11 +104,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
           <div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
             <nav>
               <ul class="nav navbar-nav">
-                <li ><a href="../web/index.php">Home</a></li>
-                <li class="active"><a href="encuestas.html" class="hvr-bounce-to-bottom">Encuestas</a></li>
-                <li><a href="acerca.html" class="hvr-bounce-to-bottom">Acerca de..</a></li>
+                <li ><a href="index.php">Home</a></li>
+                <li class="active"><a href="encuestas.php" class="hvr-bounce-to-bottom">Encuestas</a></li>
+                <li><a href="acerca.php" class="hvr-bounce-to-bottom">Acerca de..</a></li>
                 <?php
-                echo "<li><a href='acerca.html' class='hvr-bounce-to-bottom'>".$name."</a></li>";
+                echo "<li><a href='acerca.php' class='hvr-bounce-to-bottom'>".$name."</a></li>";
                 ?>
               </ul>
             </nav>
@@ -338,26 +338,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             </form>
           </div>
       </div>
-
-
-<?php
-
-require_once("dompdf/dompdf_config.inc.php");
-
-$html = "AQUI MI CODIGO HTML";
-
-//Creamos la instancia
-$dompdf = new DOMPDF();
-
-//Cargamos nuestro código HTML
-$dompdf->load_html($html);
-
-//Hacemos la conversion de HTML a PDF
-$dompdf->render();
-
-//El nombre con el que deseamos guardar el archivo generado
-$dompdf->stream("nombre.pdf");
-?>
 
 
 

@@ -4,7 +4,7 @@ if (!$_SESSION){
     session_unset();
     session_destroy();    
     $session=null;
-    $name="Nombre de Usuario";
+    $name="Diego";
 }
 else{
     $session=true;
@@ -62,9 +62,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="navbar-header">
 					
 						<div class="logo">
-							<img src="../web/images/sisde.png" with=75 height=75>
-							<img src="../web/images/itsnew.png" with=100 height=50>
-							<img src="../web/images/tec.png" with=100 height=70>
+							<img src="images/sisde.png" with=75 height=75>
+							<img src="images/itsnew.png" with=100 height=50>
+							<img src="images/tec.png" with=100 height=70>
 						</div>
 					</div>
 
@@ -89,14 +89,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 	</div>
 <!-- //breadcrumbs -->
+
 <!-- mail -->
 	<div class="contact">
 		<div class="container">
 			<h3><span>Módulo Tres: Recursos Humanos</span></h3>
+
 			<div class="contact-grids">
 				<div class="contact-grid">
 					<div class="col-md-6 contact-grid-left">
 						<form action="encuestas_catalogo_mercadologica.php" id=Myform method="post">
+							<div class ="col-xs-6">
+
 							<p class="autem">1.	¿Cuenta con el departamento de recursos humanos?</p>
 							<div class="section_room">
 								<select id="country" name ="pre_1" onchange="change_country(this.value)" class="frm-field required">
@@ -104,97 +108,126 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<option value="0">No</option>
 								</select>
 							</div>
-							<p class="autem">2.	¿Cuenta con algún encargado de recursos humanos?</p> 
+
+							<p class="autem">2.	¿Se realiza el proceso de reclutamiento y selección de personal?</p>
 							<div class="section_room">
 								<select id="country" name ="pre_2" onchange="change_country(this.value)" class="frm-field required">
 									<option value="8.33">Si</option>
 									<option value="0">No</option>
 								</select>
 							</div>
-							<p class="autem">3.	¿Se realiza el proceso de reclutamiento y selección de personal?</p>
-							<div class="section_room">
-								<select id="country" name ="pre_3" onchange="change_country(this.value)" class="frm-field required">
-									<option value="8.33">Si</option>
-									<option value="0">No</option>
-								</select>
-							</div>
-							<p class="autem">4.	¿Reciben capacitación los colaboradores?</p><br>
+							
+							<p class="autem">4.	¿Se tienen diseñados perfiles de puesto?</p><br><br>
 							<div class="section_room">
 								<select id="country" name ="pre_4" onchange="change_country(this.value)" class="frm-field required">
 									<option value="8.33">Si</option>
 									<option value="0">No</option>
 								</select>
 							</div>
-							<p class="autem">5.	¿Se tienen diseñados perfiles de puesto?</p><br>
+							
+						
+							<p class="autem">5.	¿Los colaboradores cuentan con seguro social (IMSS)?</p>
 							<div class="section_room">
 								<select id="country" name ="pre_5" onchange="change_country(this.value)" class="frm-field required">
 									<option value="8.33">Si</option>
 									<option value="0">No</option>
 								</select>
 							</div>
-							<p class="autem">6.	¿Se establece organigrama (jerarquización) de puestos?</p>
-							<div class="section_room">
-								<select id="country" name ="pre_6" onchange="change_country(this.value)" class="frm-field required">
-									<option value="8.33">Si</option>
-									<option value="0">No</option>
-								</select>
-							</div>
-							<p class="autem">7.	¿Los colaboradores cuentan con seguro social (IMSS)?</p>
+
+							<p class="autem">7.	¿Se evalúa el desempeño de los colaboradores?</p>
 							<div class="section_room">
 								<select id="country" name ="pre_7" onchange="change_country(this.value)" class="frm-field required">
 									<option value="8.33">Si</option>
 									<option value="0">No</option>
 								</select>
 							</div>
-							<p class="autem">8.	¿Cuenta con un programa de seguridad e higiene laboral?</p>
-							<div class="section_room">
-								<select id="country" name ="pre_8" onchange="change_country(this.value)" class="frm-field required">
-									<option value="8.33">Si</option>
-									<option value="0">No</option>
-								</select>
-							</div>
-							<p class="autem">9.	¿Se evalúa el desempeño de los colaboradores?</p><br>
+							
+							<p class="autem">9.	¿Se laboran jornadas extensas de trabajo adicionales a su jornada?</p>
 							<div class="section_room">
 								<select id="country" name ="pre_9" onchange="change_country(this.value)" class="frm-field required">
 									<option value="8.33">Si</option>
 									<option value="0">No</option>
 								</select>
 							</div>
-							<p class="autem">10.	¿Se laboran jornadas extensas de trabajo adicionales a su jornada?</p>
+							<p class="autem">10.	¿Existe una comunicación efectiva entre colaborador y el patrón?</p>
 							<div class="section_room">
-								<select id="country" name ="pre_10" onchange="change_country(this.value)" class="frm-field required">
+								<select id="country" name ="pre_10"onchange="change_country(this.value)" class="frm-field required">
 									<option value="8.33">Si</option>
 									<option value="0">No</option>
 								</select>
 							</div>
-							<p class="autem">11.	¿Se motiva al colaborador a cumplir los objetivos de la empresa?</p>
+							<p class="autem">12.	¿Existe un clima laboral agradable dentro de la empresa? </p>
+							<div class="section_room">
+								<select id="country" name ="pre_12" onchange="change_country(this.value)" class="frm-field required">
+									<option value="8.33">Si</option>
+									<option value="0">No</option>
+								</select>
+							</div>
+
+							</div>
+
+							<div class ="col-xs-6">
+							<p class="autem">1.1	¿Cuenta con algún encargado de recursos humanos?</p> 
+							<div class="section_room">
+								<select id="country" name ="pre_1.1" onchange="change_country(this.value)" class="frm-field required">
+									<option value="8.33">Si</option>
+									<option value="0">No</option>
+								</select>
+							</div>
+
+							<p class="autem">3.	¿Reciben capacitación los colaboradores?</p><br>
+							<div class="section_room">
+								<select id="country" name ="pre_3" onchange="change_country(this.value)" class="frm-field required">
+									<option value="8.33">Cada 6 Meses</option>
+									<option value="8.33">Cada Año</option>
+									<option value="8.33">Plazo Mayor a un Año</option>
+									<option value="0">No reciben capacitación</option>
+								</select>
+							</div>
+
+							<p class="autem">4.1¿se cuenta con un  organigrama que establezca la jerarquización de puestos?</p><br>
+							<div class="section_room">
+								<select id="country" name ="pre_4.1" onchange="change_country(this.value)" class="frm-field required">
+									<option value="8.33">Si</option>
+									<option value="0">No</option>
+								</select>
+							</div>
+
+
+							<p class="autem">6.	¿Cuenta con un programa de seguridad e higiene laboral?</p>
+							<div class="section_room">
+								<select id="country" name ="pre_6" onchange="change_country(this.value)" class="frm-field required">
+									<option value="8.33">Si</option>
+									<option value="0">No</option>
+								</select>
+							</div>
+
+							<p class="autem">8.	¿Se motiva al colaborador a cumplir los objetivos de la empresa?</p>
+							<div class="section_room">
+								<select id="country" name ="pre_8" onchange="change_country(this.value)" class="frm-field required">
+									<option value="8.33">Si</option>
+									<option value="0">No</option>
+								</select>
+							</div>
+
+							<p class="autem">9.1	¿ Se retribuyen estas horas extras?</p><br>
+							<div class="section_room">
+								<select id="country" name ="pre_9.1" onchange="change_country(this.value)" class="frm-field required">
+									<option value="8.33">Si</option>
+									<option value="0">No</option>
+								</select>
+							</div>
+
+							
+							<p class="autem">11.	¿Existe una comunicación efectiva entre colaboradores?</p>
 							<div class="section_room">
 								<select id="country" name ="pre_11" onchange="change_country(this.value)" class="frm-field required">
 									<option value="8.33">Si</option>
 									<option value="0">No</option>
 								</select>
-							</div>
-							<p class="autem">12.	¿Existe una comunicación efectiva entre colaborador y el patrón?</p>
-							<div class="section_room">
-								<select id="country" name ="pre_12"onchange="change_country(this.value)" class="frm-field required">
-									<option value="8.33">Si</option>
-									<option value="0">No</option>
-								</select>
-							</div>
-							<p class="autem">13.	¿Existe una comunicación efectiva entre colaboradores?</p>
-							<div class="section_room">
-								<select id="country" name ="pre_13" onchange="change_country(this.value)" class="frm-field required">
-									<option value="8.33">Si</option>
-									<option value="0">No</option>
-								</select>
 							</div>			
 							
-							<p class="autem">14.	¿Existe un clima laboral agradable dentro de la empresa? </p>
-							<div class="section_room">
-								<select id="country" name ="pre_14" onchange="change_country(this.value)" class="frm-field required">
-									<option value="8.33">Si</option>
-									<option value="0">No</option>
-								</select>
+							
 							</div>
 						</form>
 					</div>
@@ -219,22 +252,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- for bootstrap working -->
 	<script src="js/bootstrap.js"></script>
 <!-- //for bootstrap working -->
-<!-- here stars scrolling icon -->
-	<script type="text/javascript">
-		$(document).ready(function() {
-			/*
-				var defaults = {
-				containerID: 'toTop', // fading element id
-				containerHoverID: 'toTopHover', // fading element hover id
-				scrollSpeed: 1200,
-				easingType: 'linear' 
-				};
-			*/
-								
-			$().UItoTop({ easingType: 'easeOutQuart' });
-								
-			});
-	</script>
-<!-- //here ends scrolling icon -->
+
 </body>
 </html>

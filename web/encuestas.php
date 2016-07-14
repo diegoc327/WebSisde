@@ -58,9 +58,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="navbar-header">
 					
 						<div class="logo">
-							<img src="../web/images/sisde.png" with=75 height=75>
-							<img src="../web/images/itsnew.png" with=100 height=50>
-							<img src="../web/images/tec.png" with=100 height=70>
+							<img src="images/sisde.png" with=75 height=75>
+							<img src="images/itsnew.png" with=100 height=50>
+							<img src="images/tec.png" with=100 height=70>
 						</div>
 					</div>
 
@@ -68,10 +68,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
 						<nav>
 							<ul class="nav navbar-nav">
-								<li ><a href="index.html">Home</a></li>
-								<li class="active"><a href="encuestas.html" class="hvr-bounce-to-bottom">Encuestas</a></li>
-								<li ><a href="encuestas.html" class="hvr-bounce-to-bottom">Administración</a></li>
-								<li><a href="acerca.html" class="hvr-bounce-to-bottom">Acerca de..</a></li>
+								<li ><a href="index.php">Home</a></li>
+								<li class="active"><a href="encuestas.php" class="hvr-bounce-to-bottom">Encuestas</a></li>
+								<li ><a href="encuestas.php" class="hvr-bounce-to-bottom">Administración</a></li>
+								<li><a href="acerca.php" class="hvr-bounce-to-bottom">Acerca de..</a></li>
 								<?php
 								echo "<li><a href='acerca.html' class='hvr-bounce-to-bottom'>".$name."</a></li>";
 								?>
@@ -94,10 +94,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			
 			<div class="gallery-grids carouselGallery-grid hidden-xs">
 				<div class="col-md-4 gallery-grid">
-					<div class="carouselGallery-col-1 carouselGallery-carousel" data-likes="3144" data-index="0" data-username=" " data-imagetext="At vero eos et accusamus et iusto odio 
-						 dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores 
-						 et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui
-						 officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio." 
+					<div class="carouselGallery-col-1 carouselGallery-carousel" data-likes="3144" data-index="0" data-username=" " data-imagetext=" a" 
 						data-location="Temporibus" data-imagepath="images/7.jpg" data-posturl="#" 
 						style="background-image:url(images/empresas.png);" >
 						<div class="carouselGallery-item">
@@ -110,10 +107,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div>
 				</div>
 				<div class="col-md-4 gallery-grid">
-					<div class="carouselGallery-col-1 carouselGallery-carousel" data-likes="3144" data-index="2" data-username=" " data-imagetext="At vero eos et accusamus et iusto odio 
-						 dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores 
-						 et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui
-						 officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio." 
+					<div class="carouselGallery-col-1 carouselGallery-carousel" data-likes="3144" data-index="2" data-username=" " data-imagetext=" a" 
 						data-location="Temporibus" data-imagepath="images/8.jpg" data-posturl="#" 
 						style="background-image:url(images/dc.png);">
 						<div class="carouselGallery-item">
@@ -126,120 +120,84 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div>
 				</div>			
 				<div class="col-md-4 gallery-grid">
-					<div class="carouselGallery-col-1 carouselGallery-carousel" data-likes="3144" data-index="2" data-username=" " data-imagetext="At vero eos et accusamus et iusto odio 
-						 dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores 
-						 et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui
-						 officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio." 
+					<div class="carouselGallery-col-1 carouselGallery-carousel" data-likes="3144" data-index="2" data-username=" " data-imagetext=" a" 
 						data-location="Temporibus" data-imagepath="images/8.jpg" data-posturl="#" 
 						style="background-image:url(images/rh.png);">
 						<div class="carouselGallery-item">
 							<div class="carouselGallery-item-meta">
 								<span class="carouselGallery-item-meta-user">
-<<<<<<< HEAD
 									<a href="encuestas_catalogo_rh.php">Recursos Humanos
-=======
 									<a href="encuestas_catalogo_rh.php">Recursos Humanos</a>
->>>>>>> 9536daebae3af9656326d2f8e4070a8b9e9e8b54
 								</span>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4 gallery-grid">
-					<div class="carouselGallery-col-1 carouselGallery-carousel" data-likes="3144" data-index="3" data-username=" " data-imagetext="At vero eos et accusamus et iusto odio 
-						 dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores 
-						 et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui
-						 officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio." 
+					<div class="carouselGallery-col-1 carouselGallery-carousel" data-likes="3144" data-index="3" data-username=" " data-imagetext=" a" 
 						data-location="Temporibus" data-imagepath="images/6.jpg" data-posturl="#" 
 						style="background-image:url(images/merca.png);">
 						<div class="carouselGallery-item">
 							<div class="carouselGallery-item-meta">
 								<span class="carouselGallery-item-meta-user">
-<<<<<<< HEAD
 									<a href="encuestas_catalogo_mercadologica.php">Mercadologia
-=======
 									<a href="encuestas_catalogo_mercadologica.php">Mercadologia</a>
->>>>>>> 9536daebae3af9656326d2f8e4070a8b9e9e8b54
 								</span>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4 gallery-grid">
-					<div class="carouselGallery-col-1 carouselGallery-carousel" data-likes="3144" data-index="4" data-username=" " data-imagetext="At vero eos et accusamus et iusto odio 
-						 dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores 
-						 et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui
-						 officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio." 
+					<div class="carouselGallery-col-1 carouselGallery-carousel" data-likes="3144" data-index="4" data-username=" " data-imagetext="a" 
 						data-location="Temporibus" data-imagepath="images/10.jpg" data-posturl="#" 
 						style="background-image:url(images/finan.png);">
 						<div class="carouselGallery-item">
 							<div class="carouselGallery-item-meta">
 								<span class="carouselGallery-item-meta-user">
-<<<<<<< HEAD
 									<a href="encuestas_catalogo_financiero.php">Financiero
-=======
 									<a href="encuestas_catalogo_financiero.php">Financiero</a>
->>>>>>> 9536daebae3af9656326d2f8e4070a8b9e9e8b54
 								</span>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4 gallery-grid">
-					<div class="carouselGallery-col-1 carouselGallery-carousel" data-likes="3144" data-index="5" data-username=" " data-imagetext="At vero eos et accusamus et iusto odio 
-						 dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores 
-						 et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui
-						 officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio." 
+					<div class="carouselGallery-col-1 carouselGallery-carousel" data-likes="3144" data-index="5" data-username=" " data-imagetext=" a" 
 						data-location="Temporibus" data-imagepath="images/12.jpg" data-posturl="#" 
 						style="background-image:url(images/eco.png);">
 						<div class="carouselGallery-item">
 							<div class="carouselGallery-item-meta">
 								<span class="carouselGallery-item-meta-user">
-<<<<<<< HEAD
 									<a href="encuestas_catalogo_economico.php">Economica
-=======
 									<a href="encuestas_catalogo_economico.php">Economica</a>
->>>>>>> 9536daebae3af9656326d2f8e4070a8b9e9e8b54
 								</span>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4 gallery-grid">
-					<div class="carouselGallery-col-1 carouselGallery-carousel" data-likes="3144" data-index="6" data-username=" " data-imagetext="At vero eos et accusamus et iusto odio 
-						 dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores 
-						 et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui
-						 officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio." 
+					<div class="carouselGallery-col-1 carouselGallery-carousel" data-likes="3144" data-index="6" data-username=" " data-imagetext=" a" 
 						data-location="Temporibus" data-imagepath="images/8.jpg" data-posturl="#" 
 						style="background-image:url(images/cont.png);">
 						<div class="carouselGallery-item">
 							<div class="carouselGallery-item-meta">
 								<span class="carouselGallery-item-meta-user">
-<<<<<<< HEAD
 									<a href="encuestas_catalogo_contable.php">Contable
-=======
 									<a href="encuestas_catalogo_contable.php">Contable</a>
->>>>>>> 9536daebae3af9656326d2f8e4070a8b9e9e8b54
 								</span>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4 gallery-grid">
-					<div class="carouselGallery-col-1 carouselGallery-carousel" data-likes="3144" data-index="7" data-username=" " data-imagetext="At vero eos et accusamus et iusto odio 
-						 dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores 
-						 et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui
-						 officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio." 
+					<div class="carouselGallery-col-1 carouselGallery-carousel" data-likes="3144" data-index="7" data-username=" " data-imagetext=" a" 
 						data-location="Temporibus" data-imagepath="images/7.jpg" data-posturl="#" 
 						style="background-image:url(images/tri.png);">
 						<div class="carouselGallery-item">
 							<div class="carouselGallery-item-meta">
 								<span class="carouselGallery-item-meta-user">
-<<<<<<< HEAD
 									<a href="encuestas_catalogo_impuestos.php">Tributacion o Impuestos
-=======
 									<a href="encuestas_catalogo_impuestos.php">Tributacion o Impuestos</a>
->>>>>>> 9536daebae3af9656326d2f8e4070a8b9e9e8b54
 								</span>
 							</div>
 						</div>

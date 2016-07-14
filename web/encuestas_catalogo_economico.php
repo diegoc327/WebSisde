@@ -4,7 +4,7 @@ if (!$_SESSION){
     session_unset();
     session_destroy();    
     $session=null;
-    $name="Nombre de Usuario";
+    $name="Diego";
 }
 else{
     $session=true;
@@ -59,9 +59,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="navbar-header">
 					
 						<div class="logo">
-							<img src="../web/images/sisde.png" with=75 height=75>
-							<img src="../web/images/itsnew.png" with=100 height=50>
-							<img src="../web/images/tec.png" with=100 height=70>
+							<img src="images/sisde.png" with=75 height=75>
+							<img src="images/itsnew.png" with=100 height=50>
+							<img src="images/tec.png" with=100 height=70>
 						</div>
 					</div>
 
@@ -69,11 +69,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
 						<nav>
 							<ul class="nav navbar-nav">
-								<li ><a href="index.html">Home</a></li>
-								<li class="active"><a href="encuestas.html" class="hvr-bounce-to-bottom">Encuestas</a></li>
+								<li ><a href="index.php">Home</a></li>
+								<li class="active"><a href="encuestas.php" class="hvr-bounce-to-bottom">Encuestas</a></li>
 								<li><a href="acerca.html" class="hvr-bounce-to-bottom">Acerca de..</a></li>
 								<?php
-								echo "<li><a href='acerca.html' class='hvr-bounce-to-bottom'>".$name."</a></li>";
+								echo "<li><a href='acerca.php' class='hvr-bounce-to-bottom'>".$name."</a></li>";
 								?>
 							</ul>
 						</nav>
@@ -94,6 +94,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="contact-grid">
 					<div class="col-md-6 contact-grid-left">
 						<form action="encuestas_catalogo_contable.php" id="Myform" method="post">
+						<div class="col-xs-6">
 							<p class="autem">1.	¿Tiene conocimiento sobre la inflación de precios?</p>
 							<div class="section_room">
 								<select id="country" name ="pre_1" onchange="change_country(this.value)" class="frm-field required">
@@ -108,13 +109,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<option value="0">No</option>
 								</select>
 							</div>
-							<p class="autem">3.	¿Considera que afecta la la paridad cambiaria del dolar a su empresa?</p>
-							<div class="section_room">
-								<select id="country" name ="pre_3" onchange="change_country(this.value)" class="frm-field required">
-									<option value="16.67">Si</option>
-									<option value="0">No</option>
-								</select>
-							</div>
 							<p class="autem">4.	¿Considera que su producción o servicio satisface a sus clientes en el mercado? </p>
 							<div class="section_room">
 								<select id="country" name ="pre_4" onchange="change_country(this.value)" class="frm-field required">
@@ -122,19 +116,33 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<option value="0">No</option>
 								</select>
 							</div>
-							<p class="autem">5.	¿Sabe cual es su porcentaje de ventas en el mercado?</p><br>
+							
+							</div>
+							<div class="col-xs-6">
+							<p class="autem">1.1 ¿De qué manera le afecta la inflación? </p><br><br>
+							<div class="section_room">
+								<select id="country" name ="pre_1.1" onchange="change_country(this.value)" class="frm-field required">
+									<option value="0">Disminuyen ventas y las utilidades</option>
+									<option value="0">Aumentan los precios de las materias primas</option>
+									<option value="0">Todas las anteriores</option>
+								</select>
+							</div>
+							<p class="autem">3.	¿Considera que afecta la la paridad cambiaria del dolar a su empresa?</p><br>
+							<div class="section_room">
+								<select id="country" name ="pre_3" onchange="change_country(this.value)" class="frm-field required">
+									<option value="16.67">Si</option>
+									<option value="0">No</option>
+								</select>
+							</div>
+							
+							<p class="autem">5.	¿Sabe cual es su porcentaje de ventas en el mercado?</p>
 							<div class="section_room">
 								<select id="country" name ="pre_5" onchange="change_country(this.value)" class="frm-field required">
 									<option value="16.67">Si</option>
 									<option value="0">No</option>
 								</select>
 							</div>
-							<p class="autem">6. ¿Realiza cotizaciones con sus costos de producción(materia prima, insumos, mano de obra, etc.)  ? </p>
-							<div class="section_room">
-								<select id="country" name ="pre_6" onchange="change_country(this.value)" class="frm-field required">
-									<option value="16.67">Si</option>
-									<option value="0">No</option>
-								</select>
+							
 							</div>
 
 						</form>
@@ -159,22 +167,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- for bootstrap working -->
 	<script src="js/bootstrap.js"></script>
 <!-- //for bootstrap working -->
-<!-- here stars scrolling icon -->
-	<script type="text/javascript">
-		$(document).ready(function() {
-			/*
-				var defaults = {
-				containerID: 'toTop', // fading element id
-				containerHoverID: 'toTopHover', // fading element hover id
-				scrollSpeed: 1200,
-				easingType: 'linear' 
-				};
-			*/
-								
-			$().UItoTop({ easingType: 'easeOutQuart' });
-								
-			});
-	</script>
-<!-- //here ends scrolling icon -->
+
 </body>
 </html>
